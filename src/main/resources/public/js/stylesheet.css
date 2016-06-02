@@ -1,0 +1,11 @@
+klocek {
+	height:100px;
+	width: 100px;
+	background-color:#FF0000;
+	margin-bottom: 5px;
+	border-radius: 5px; 
+}
+
+#green {
+	background-color:#008800; 
+}
