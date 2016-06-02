@@ -60,7 +60,7 @@
                     </div>
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
-                            <login_button>Zaloguj</login_button>
+                            <button id="login_button">Zaloguj</button>
                             <!--<a href="k2.html" type="submit" class="btn btn-block
                             btn-default">Zaloguj</a>
                         -->
@@ -170,7 +170,7 @@
 </footer>
 
         <span id = "result" style = "background-color:#cc0;">
-         STAGE
+         CHUJ
       </span>
 
 <script language="Javascript">
@@ -185,7 +185,7 @@
 </script>
 
 <script>
-    $('login_button').on('click', function(){
+    $('#login_button').on('click', function(){
         var username = $("#login_login").val();
         var password = $("#password_password").val();
         if(username == ""){
