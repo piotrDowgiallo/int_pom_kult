@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b2a20d86-e68a-421f-94ed-ad564653498b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/index.html" afterPath="$PROJECT_DIR$/src/main/resources/public/index.html" />
     </list>
     <ignored path="InternetowyPomocnikKulturysty-Core.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -969,7 +968,7 @@
       <workItem from="1464635947602" duration="7243000" />
       <workItem from="1464879642718" duration="421000" />
       <workItem from="1464880093588" duration="5091000" />
-      <workItem from="1464885864298" duration="1348000" />
+      <workItem from="1464885864298" duration="1357000" />
     </task>
     <task id="LOCAL-00001" summary="Git test">
       <created>1464880793509</created>
@@ -1013,11 +1012,18 @@
       <option name="project" value="LOCAL" />
       <updated>1464887022251</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="zmienono button&#10;obrazek i cos tamasd">
+      <created>1464887218835</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1464887218835</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119308000" />
+    <option name="totallyTimeSpent" value="119317000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -1069,7 +1075,8 @@
     <MESSAGE value="Socjalistyczne hello" />
     <MESSAGE value="zmienono button&#10;" />
     <MESSAGE value="zmienono button&#10;obrazek i cos tam" />
-    <option name="LAST_COMMIT_MESSAGE" value="zmienono button&#10;obrazek i cos tam" />
+    <MESSAGE value="zmienono button&#10;obrazek i cos tamasd" />
+    <option name="LAST_COMMIT_MESSAGE" value="zmienono button&#10;obrazek i cos tamasd" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
