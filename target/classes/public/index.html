@@ -242,22 +242,28 @@
         var password = $("#password").val();
         var cpassword = $("#cpassword").val();
 
-        if((login == "")||(email == "")||(second_name == "")||(first_name == "")||(password == "")||(cpassword == "")){
-            $('#messageDiv').css("display","none");
-            alert("Wprowadz wszytskie dane");
-            return;
-        }else {
+        if(password == cpassword) {
+            if ((login == "") || (email == "") || (second_name == "") || (first_name == "") || (password == "") || (cpassword == "")) {
+                $('#messageDiv').css("display", "none");
+                alert("Wprowadz wszytskie dane");
+                return;
+            } else {
 
-            $.post("/user/create", {
-                login: login,
-                password: password,
-                email: email,
-                first_name: first_name,
-                second_name: second_name
-            }, function () {
-            });
+                $.post("/user/create", {
+                    login: login,
+                    password: password,
+                    email: email,
+                    first_name: first_name,
+                    second_name: second_name
+                }, function () {
+                });
+                $('#messageDiv').css("display", "none");
+                alert("Zostaleś poprawnie zarejestrowany");
+            }
+        }
+        else {
             $('#messageDiv').css("display", "none");
-            alert("Zostaleś poprawnie zarejestrowany");
+            alert("Hasła nie są takie same");
         }
     });
 </script>

@@ -53,7 +53,7 @@ public class UserController {
     public String greeting(@RequestParam(value="name", required=false, defaultValue="World") String name, Model model) {
         System.out.println("In greeting method");
         model.addAttribute("name", name);
-        return "test";
+        return "pozalogowaniu";
     }
 
     @RequestMapping(value="/user/login", method = RequestMethod.GET)
