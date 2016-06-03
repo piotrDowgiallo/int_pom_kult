@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2a20d86-e68a-421f-94ed-ad564653498b" name="Default" comment="zmienono button&#10;ustawilem warunki rejestracji i logowania&#10;dodalem treningi 4 podstrony i obrazek&#10;dodanie == hasel&#10;podsrony treningowe i inne">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+    <list default="true" id="b2a20d86-e68a-421f-94ed-ad564653498b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/Dieta.html" afterPath="$PROJECT_DIR$/src/main/resources/public/Dieta.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/Galeria.html" afterPath="$PROJECT_DIR$/src/main/resources/public/Galeria.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/Produkty2.html" afterPath="$PROJECT_DIR$/src/main/resources/public/Produkty2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/Produkty3.html" afterPath="$PROJECT_DIR$/src/main/resources/public/Produkty3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/index.html" afterPath="$PROJECT_DIR$/src/main/resources/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/trening1.html" afterPath="$PROJECT_DIR$/src/main/resources/public/trening1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/trening2.html" afterPath="$PROJECT_DIR$/src/main/resources/public/trening2.html" />
     </list>
     <ignored path="InternetowyPomocnikKulturysty-Core.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -985,7 +977,7 @@
       <workItem from="1464879642718" duration="421000" />
       <workItem from="1464880093588" duration="5091000" />
       <workItem from="1464885864298" duration="2942000" />
-      <workItem from="1464968880081" duration="1913000" />
+      <workItem from="1464968880081" duration="1921000" />
     </task>
     <task id="LOCAL-00001" summary="Git test">
       <created>1464880793509</created>
@@ -1057,11 +1049,18 @@
       <option name="project" value="LOCAL" />
       <updated>1464969026724</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="zmienono button&#10;ustawilem warunki rejestracji i logowania&#10;dodalem treningi 4 podstrony i obrazek&#10;dodanie == hasel&#10;podsrony treningowe i inne">
+      <created>1464971369784</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1464971369784</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122815000" />
+    <option name="totallyTimeSpent" value="122823000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
