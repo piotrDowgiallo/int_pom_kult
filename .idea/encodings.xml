@@ -2,8 +2,6 @@
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/public/Dieta.html" charset="windows-1250" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/public/Galeria.html" charset="windows-1250" />
     <file url="file://$PROJECT_DIR$/src/main/resources/public/Produkty1.html" charset="windows-1250" />
     <file url="file://$PROJECT_DIR$/src/main/resources/public/Produkty2.html" charset="windows-1250" />
     <file url="file://$PROJECT_DIR$/src/main/resources/public/Produkty3.html" charset="windows-1250" />
@@ -12,22 +10,20 @@
     <file url="file://$PROJECT_DIR$/src/main/resources/public/bootstrap" charset="windows-1250" />
     <file url="file://$PROJECT_DIR$/src/main/resources/public/css/theme.css" charset="windows-1250" />
     <file url="file://$PROJECT_DIR$/src/main/resources/public/css/theme.less" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/public/dieta.html" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/public/galeria.html" charset="windows-1250" />
     <file url="file://$PROJECT_DIR$/src/main/resources/public/images/Beznazwy-1.jpg" charset="windows-1250" />
     <file url="file://$PROJECT_DIR$/src/main/resources/public/index.html" charset="windows-1250" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/public/informacje.html" charset="windows-1250" />
     <file url="file://$PROJECT_DIR$/src/main/resources/public/js/jquery-2.2.3.min.js" charset="windows-1250" />
     <file url="file://$PROJECT_DIR$/src/main/resources/public/kalkulatory.html" charset="windows-1250" />
     <file url="file://$PROJECT_DIR$/src/main/resources/public/kalkulatory2.html" charset="windows-1250" />
     <file url="file://$PROJECT_DIR$/src/main/resources/public/kalkulatory3.html" charset="windows-1250" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/public/kontakt.html" charset="windows-1250" />
     <file url="file://$PROJECT_DIR$/src/main/resources/public/lib" charset="windows-1250" />
     <file url="file://$PROJECT_DIR$/src/main/resources/public/offcanvas.css" charset="windows-1250" />
     <file url="file://$PROJECT_DIR$/src/main/resources/public/pinegrow.json" charset="windows-1250" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/public/pomoc.html" charset="windows-1250" />
     <file url="file://$PROJECT_DIR$/src/main/resources/public/pozalogowaniu.html" charset="windows-1250" />
     <file url="file://$PROJECT_DIR$/src/main/resources/public/trening1.html" charset="windows-1250" />
     <file url="file://$PROJECT_DIR$/src/main/resources/public/trening2.html" charset="windows-1250" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/public/tworcy.html" charset="windows-1250" />
     <file url="file://$PROJECT_DIR$/src/main/resources/templates/informacje.html" charset="windows-1250" />
     <file url="PROJECT" charset="UTF-8" />
   </component>

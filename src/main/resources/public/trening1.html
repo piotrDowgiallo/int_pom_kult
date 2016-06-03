@@ -10,7 +10,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <img src="C:\Users\Daniel\Desktop\InternetowyPomocnikKulturysty-Core\front\Beznazwy-1.jpg" class="img-responsive">
+                        <img src="images\Beznazwy-1.jpg" class="img-responsive">
                     </div>
                 </div>
                 <div class="row">
@@ -42,85 +42,116 @@
                     <div class="col-md-3 text-center">
                         <a class="btn btn-primary" href="index.html">Wyloguj się</a>
                         <div class="col-md-3 text-center">
-                            <a class="btn btn-primary">Edytuj dane</a>
+                            <a class="btn btn-primary" href="edytuj_dane.html">Edytuj dane</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div><div class="section"><div class="container"><div class="row"><div class="col-md-12"><ul class="nav nav-justified nav-pills"><li class="active"><a href="trening1.html">Twoje rekordy</a></li><li><a href="trening2.html">Ćwiczenia</a></li><li><a href="#trening3.html">Plan ćwiczeń</a></li><li><a href="#trening4.html">Plan treningowy</a></li></ul></div></div></div></div>
+        </div>
         <div class="section">
-            <div class="container"><div class="row"><div class="col-md-12"><div class="section"><div class="container"><div class="row"><div class="col-md-8"><div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <h3 class="panel-title text-center">Twoje rekordy</h3>
-                            </div>
-                            <div class="panel-body">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Nazwa ćwiczenia</th>
-                                            
-                                            <th>Waga maksymalna</th>
-                                            
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Larry</td>
-                                            <td>the Bird</td>
-                                            
-                                            
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div></div><div class="col-md-4"><div class="col-md-12 text-center">
-                        <div class="col-md-12 text-left">
-                            <div class="btn-link panel panel-primary">
-                                <div class="panel-heading">
-                                    <h1 class="panel-title text-center">Dodaj nowy rekord !</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="nav nav-justified nav-pills">
+                            <li class="active">
+                                <a href="trening1.html">Twoje rekordy</a>
+                            </li>
+                            <li>
+                                <a href="trening2.html">Ćwiczenia</a>
+                            </li>
+                            <li>
+                                <a href="trening3.html">Plan ćwiczeń</a>
+                            </li>
+                            <li>
+                                <a href="trening4.html">Plan treningowy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="panel panel-primary">
+                                            <div class="panel-heading">
+                                                <h3 class="panel-title text-center">Twoje rekordy</h3>
+                                            </div>
+                                            <div class="panel-body">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>#</th>
+                                                            <th>Nazwa ćwiczenia</th>
+                                                            <th>Waga maksymalna</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Mark</td>
+                                                            <td>Otto</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>Jacob</td>
+                                                            <td>Thornton</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>Larry</td>
+                                                            <td>the Bird</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="col-md-12 text-center">
+                                            <div class="col-md-12 text-left">
+                                                <div class="btn-link panel panel-primary">
+                                                    <div class="panel-heading">
+                                                        <h1 class="panel-title text-center">Dodaj nowy rekord !</h1>
+                                                    </div>
+                                                </div>
+                                                <form class="form-horizontal text-left" role="form">
+                                                    <div class="form-group">
+                                                        <div class="col-sm-2">
+                                                            <label for="inputEmail3" class="control-label">Nazwa</label>
+                                                        </div>
+                                                        <div class="col-sm-10">
+                                                            <input type="text" class="form-control" id="fat" placeholder="Nazwa ćwiczenia">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-2">
+                                                            <label for="fat" class="control-label">Waga</label>
+                                                        </div>
+                                                        <div class="col-sm-10">
+                                                            <input type="text" class="form-control" id="fat" placeholder="waga maksymalna">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-offset-2 col-sm-10">
+                                                            <button id="addpr">Dodaj produkt</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <form class="form-horizontal text-left" role="form">
-                                
-                                
-                                
-                                <div class="form-group"><div class="col-sm-2"><label for="inputEmail3" class="control-label">Nazwa</label></div>
-                                    
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="fat" placeholder="Nazwa ćwiczenia">
-                                    </div>
-                                </div><div class="form-group">
-                                    <div class="col-sm-2">
-                                        <label for="fat" class="control-label">Waga</label>
-                                    </div>
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="fat" placeholder="waga maksymalna">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-sm-offset-2 col-sm-10">
-                                        <button id="addpr">Dodaj produkt</button>
-                                    </div>
-                                </div>
-                            </form>
                         </div>
-                    </div></div></div></div></div></div></div></div>
+                    </div>
+                </div>
+            </div>
         </div>
         <footer class="section section-primary" data-pgc-define="">
             <ul class="pager">
