@@ -179,7 +179,7 @@
             $.ajax({
 
                 type:"GET",
-                url: '/products/',
+                url: '/product/get',
                 success: function(products){
                     $.each(products,function(i, product){
                         $products.append('<li>moje produkty: '+ product.name +'</li>')
