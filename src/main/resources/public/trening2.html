@@ -49,35 +49,26 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="section">
+        </div><div class="section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="section">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <ul class="nav nav-justified nav-pills">
-                                            <li>
-                                                <a href="trening1.html">Twoje rekordy</a>
-                                            </li>
-                                            <li class="active">
-                                                <a href="trening2.html">Ćwiczenia</a>
-                                            </li>
-                                            <li>
-                                                <a href="trening3.html">Plan ćwiczeń</a>
-                                            </li>
-                                            
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <ul class="nav nav-justified nav-pills">
+                            <li>
+                                <a href="trening1.html">Twoje rekordy</a>
+                            </li>
+                            <li class="active">
+                                <a href="trening2.html">Ćwiczenia</a>
+                            </li>
+                            <li>
+                                <a href="trening3.html">Plan ćwiczeń</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
+        
         <div class="section">
             <div class="container">
                 <div class="row">
@@ -130,7 +121,7 @@
                                     </div>
                                     <div class="col-md-4">
                                         <div class="col-md-12 text-center">
-                                            <div class="col-md-12 text-left">
+                                            <div class="col-md-12 text-right">
                                                 <div class="btn-link panel panel-primary">
                                                     <div class="panel-heading">
                                                         <h1 class="panel-title text-center">Dodaj ćwiczenie:</h1>
@@ -169,12 +160,8 @@
                                                             <input type="text" class="form-control" id="fat" placeholder="poziom trudności">
                                                         </div>
                                                     </div>
-                                                    <div class="form-group">
-                                                        <div class="col-sm-offset-2 col-sm-10">
-                                                            <button id="addpr">Dodaj produkt</button>
-                                                        </div>
-                                                    </div>
-                                                </form>
+                                                    
+                                                </form><a class="btn btn-info" id="addtr">Dodaj ćwiczenie</a>
                                             </div>
                                         </div>
                                     </div>
@@ -195,38 +182,38 @@
                 </li>
             </ul>
         </footer>
-    <script>
-
-    $('#addtr').on("click", function() {
-
-        var login = $("#login").val();
-        var email = $("#email").val();
-        var second_name = $("#second_name").val();
-        var first_name = $("#first_name").val();
-        var password = $("#password").val();
-        var cpassword = $("#cpassword").val();
-
-        if(password == cpassword) {
-            if ((login == "") || (email == "") || (second_name == "") || (first_name == "") || (password == "") || (cpassword == "")) {
-                $('#messageDiv').css("display", "none");
-                alert("Wprowadz wszytskie dane");
-                return;
-            } else {
-
-                $.post("/user/create", {
-                    login: login,
-                    password: password,
-                    email: email,
-                    first_name: first_name,
-                    second_name: second_name
-                }, function () {
-                });
-                $('#messageDiv').css("display", "none");
-                alert("Zostaleś poprawnie zarejestrowany");
-            }
-        }
-
-    });
-</script>
+        <script>
+            $('#addtr').on("click", function() {
+        
+                var login = $("#login").val();
+                var email = $("#email").val();
+                var second_name = $("#second_name").val();
+                var first_name = $("#first_name").val();
+                var password = $("#password").val();
+                var cpassword = $("#cpassword").val();
+        
+                if(password == cpassword) {
+                    if ((login == "") || (email == "") || (second_name == "") || (first_name == "") || (password == "") || (cpassword == "")) {
+                        $('#messageDiv').css("display", "none");
+                        alert("Wprowadz wszytskie dane");
+                        return;
+                    } else {
+        
+                        $.post("/user/create", {
+                            login: login,
+                            password: password,
+                            email: email,
+                            first_name: first_name,
+                            second_name: second_name
+                        }, function () {
+                        });
+                        $('#messageDiv').css("display", "none");
+                        alert("Zostaleś poprawnie zarejestrowany");
+                    }
+                }
+        
+            });
+        </script>
+    
 
 </body></html>

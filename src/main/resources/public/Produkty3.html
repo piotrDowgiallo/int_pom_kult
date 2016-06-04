@@ -36,7 +36,6 @@
                             <li>
                                 <a href="kalkulatory.html">Kalkulatory</a>
                             </li>
-                            
                             <li>
                                 <a href="Dieta.html">Dieta</a>
                             </li>
@@ -56,14 +55,14 @@
                 <div class="row">
                     <div class="col-md-12">
                         <ul class="nav nav-justified nav-pills">
+                            <li>
+                                <a href="produkty1.html">Twoja baza produktów</a>
+                            </li>
+                            <li>
+                                <a href="produkty2.html">Szukaj produktów</a>
+                            </li>
                             <li class="active">
-                                <a href="#produkty1.html">Twoja baza produktów</a>
-                            </li>
-                            <li>
-                                <a href="#produkty2.html">Szukaj produktów</a>
-                            </li>
-                            <li>
-                                <a href="#produkty3.html">Posiłki<br></a>
+                                <a href="produkty3.html">Posiłki<br></a>
                             </li>
                         </ul>
                     </div>
@@ -83,10 +82,10 @@
                                     <thead>
                                         <tr>
                                             <th>#</th>
-                                            <th>Nazwa</th>
-                                            <th>Białka</th>
-                                            <th>Węglowodany</th>
-                                            <th>Tłuszcze</th>
+                                            <th>Nazwa produktu</th>
+                                            <th>Data</th>
+                                            
+                                            
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -94,22 +93,22 @@
                                             <td>1</td>
                                             <td>Mark</td>
                                             <td>Otto</td>
-                                            <td>@mdo</td>
-                                            <td>Mark</td>
+                                            
+                                            
                                         </tr>
                                         <tr>
                                             <td>2</td>
                                             <td>Jacob</td>
                                             <td>Thornton</td>
-                                            <td>@fat</td>
-                                            <td>Mark</td>
+                                            
+                                            
                                         </tr>
                                         <tr>
                                             <td>3</td>
                                             <td>Larry</td>
                                             <td>the Bird</td>
-                                            <td>@twitter</td>
-                                            <td>Mark</td>
+                                            
+                                            
                                         </tr>
                                     </tbody>
                                 </table>
@@ -117,51 +116,26 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="col-md-12">
+                        <div class="col-md-12 text-right">
                             <div class="btn-link panel panel-primary">
                                 <div class="panel-heading">
-                                    <h1 class="panel-title text-center">Dodaj produkt do własnej bazy:</h1>
+                                    <h1 class="panel-title text-center">Dodaj posiłek:</h1>
                                 </div>
                             </div>
-                            <form class="form-horizontal" role="form">
+                            <div class="btn-group"><a class="btn btn-success dropdown-toggle" data-toggle="dropdown"> Wybierz produkt z bazy<i class="fa fa-caret-down"></i></a><ul class="dropdown-menu" role="menu"><li><a href="#">Action</a></li></ul></div><form class="form-horizontal" role="form">
+                                
+                                
+                                
                                 <div class="form-group">
                                     <div class="col-sm-2">
-                                        <label for="name" class="control-label">Nazwa</label>
+                                        <label for="fat" class="control-label">Data</label>
                                     </div>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="name" placeholder="Nazwa produktu">
+                                        <input type="text" class="form-control" id="fat" placeholder="data">
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <div class="col-sm-2">
-                                        <label for="proteins" class="control-label">Białka</label>
-                                    </div>
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="proteins" placeholder="białka">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-sm-2">
-                                        <label for="carbohydrates" class="control-label">Węgle</label>
-                                    </div>
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="carbohydrates" placeholder="węglowodany">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-sm-2">
-                                        <label for="fat" class="control-label">Tłuszcze</label>
-                                    </div>
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="fat" placeholder="tłuszcze">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-sm-offset-2 col-sm-10">
-                                        <button id="addpr">Dodaj produkt</button>
-                                    </div>
-                                </div>
-                            </form>
+                                
+                            </form><a class="btn btn-info" id="addtr">Dodaj posiłek</a>
                         </div>
                     </div>
                 </div>

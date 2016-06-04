@@ -10,7 +10,8 @@
         <script src="jquery-2.2.3.min.js"></script>
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
         <script type="text/javascript" src="script.js"></script>
-    </head><body id="startowa"><div class="section">
+    </head><body id="startowa">
+        <div class="section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -36,9 +37,6 @@
                                 <a href="kalkulatory.html">Kalkulatory</a>
                             </li>
                             <li>
-                                <a href="Galeria.html">Galeria</a>
-                            </li>
-                            <li>
                                 <a href="Dieta.html">Dieta</a>
                             </li>
                         </ul>
@@ -46,16 +44,26 @@
                     <div class="col-md-3 text-center">
                         <a class="btn btn-primary" href="index.html">Wyloguj się</a>
                         <div class="col-md-3 text-center">
-                            <a class="btn btn-primary">Edytuj dane</a>
+                            <a class="btn btn-primary" href="edytuj_dane.html">Edytuj dane</a>
                         </div>
                     </div>
                 </div>
-                
-                
             </div>
-        </div><div class="section">
-            <div class="container"><div class="row"><div class="col-md-12"><p>&nbsp;Nowosci ze swiata sportu<br><br>Lorem ipsum dolor sit amet, consectetur adipisici elit, <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud </p></div></div></div>
-        </div><footer class="section section-primary" data-pgc-define="">
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>&nbsp;Nowosci ze swiata sportu
+                            <br>
+                            <br>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                            <br>Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="section section-primary" data-pgc-define="">
             <ul class="pager">
                 <li>
                     <a href="pomoc.html">Pomoc</a>
@@ -65,37 +73,38 @@
                 </li>
             </ul>
         </footer>
-    <script>
+        <script>
+            $('#addtr').on("click", function() {
+        
+                var login = $("#login").val();
+                var email = $("#email").val();
+                var second_name = $("#second_name").val();
+                var first_name = $("#first_name").val();
+                var password = $("#password").val();
+                var cpassword = $("#cpassword").val();
+        
+                if(password == cpassword) {
+                    if ((login == "") || (email == "") || (second_name == "") || (first_name == "") || (password == "") || (cpassword == "")) {
+                        $('#messageDiv').css("display", "none");
+                        alert("Wprowadz wszytskie dane");
+                        return;
+                    } else {
+        
+                        $.post("/user/create", {
+                            login: login,
+                            password: password,
+                            email: email,
+                            first_name: first_name,
+                            second_name: second_name
+                        }, function () {
+                        });
+                        $('#messageDiv').css("display", "none");
+                        alert("Zostaleś poprawnie zarejestrowany");
+                    }
+                }
+        
+            });
+        </script>
+    
 
-    $('#addtr').on("click", function() {
-
-        var login = $("#login").val();
-        var email = $("#email").val();
-        var second_name = $("#second_name").val();
-        var first_name = $("#first_name").val();
-        var password = $("#password").val();
-        var cpassword = $("#cpassword").val();
-
-        if(password == cpassword) {
-            if ((login == "") || (email == "") || (second_name == "") || (first_name == "") || (password == "") || (cpassword == "")) {
-                $('#messageDiv').css("display", "none");
-                alert("Wprowadz wszytskie dane");
-                return;
-            } else {
-
-                $.post("/user/create", {
-                    login: login,
-                    password: password,
-                    email: email,
-                    first_name: first_name,
-                    second_name: second_name
-                }, function () {
-                });
-                $('#messageDiv').css("display", "none");
-                alert("Zostaleś poprawnie zarejestrowany");
-            }
-        }
-
-    });
-</script>
 </body></html>
