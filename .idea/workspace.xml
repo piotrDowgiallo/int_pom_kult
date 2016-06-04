@@ -5,8 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/kalkulatory.html" afterPath="$PROJECT_DIR$/src/main/resources/public/kalkulatory.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/kalkulatory2.html" afterPath="$PROJECT_DIR$/src/main/resources/public/kalkulatory2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/kalkulatory.html" afterPath="$PROJECT_DIR$/target/classes/public/kalkulatory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/kalkulatory2.html" afterPath="$PROJECT_DIR$/target/classes/public/kalkulatory2.html" />
     </list>
     <ignored path="InternetowyPomocnikKulturysty-Core.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1138,7 +1136,7 @@
       <workItem from="1465046956644" duration="1761000" />
       <workItem from="1465050956954" duration="406000" />
       <workItem from="1465063431378" duration="612000" />
-      <workItem from="1465064203864" duration="2326000" />
+      <workItem from="1465064203864" duration="2626000" />
     </task>
     <task id="LOCAL-00001" summary="Git test">
       <created>1464880793509</created>
@@ -1301,11 +1299,18 @@
       <option name="project" value="LOCAL" />
       <updated>1465066363456</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="kalkulatory222222133333">
+      <created>1465066975161</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1465066975161</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137571000" />
+    <option name="totallyTimeSpent" value="137871000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -1371,7 +1376,8 @@
     <MESSAGE value="kalkulatory" />
     <MESSAGE value="kalkulatory2" />
     <MESSAGE value="kalkulatory22222" />
-    <option name="LAST_COMMIT_MESSAGE" value="kalkulatory22222" />
+    <MESSAGE value="kalkulatory222222133333" />
+    <option name="LAST_COMMIT_MESSAGE" value="kalkulatory222222133333" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
