@@ -36,7 +36,6 @@
                             <li class="active">
                                 <a href="kalkulatory.html">Kalkulatory</a>
                             </li>
-                            
                             <li>
                                 <a href="Dieta.html">Dieta</a>
                             </li>
@@ -45,7 +44,7 @@
                     <div class="col-md-3 text-center">
                         <a class="btn btn-primary" href="index.html">Wyloguj się</a>
                         <div class="col-md-3 text-center">
-                            <a class="btn btn-primary">Edytuj dane</a>
+                            <a class="btn btn-primary" href="edytuj_dane.html">Edytuj dane</a>
                         </div>
                     </div>
                 </div>
@@ -57,14 +56,12 @@
                     <div class="col-md-3 text-center">
                         <ul class="nav nav-pills">
                             <li>
-                                <a href="#">Zapotrzebowania energetycznego</a>
+                                <a href="kalkulatory.html">BMI- Podstawowe zapotrzebowanie energetyczne</a>
                             </li>
                             <li class="active">
-                                <a href="kalkulatory2.html">Kalkulator Kalorii<br></a>
+                                <a href="kalkulatory2.html">BMR - Kalkulator Kalorii</a>
                             </li>
-                            <li>
-                                <a href="kalkulatory3.html">Kalkulator Body-fat</a>
-                            </li>
+                            
                         </ul>
                     </div>
                     <div class="col-md-9 text-right">
@@ -110,38 +107,38 @@
                 </li>
             </ul>
         </footer>
-    <script>
-
-    $('#addtr').on("click", function() {
-
-        var login = $("#login").val();
-        var email = $("#email").val();
-        var second_name = $("#second_name").val();
-        var first_name = $("#first_name").val();
-        var password = $("#password").val();
-        var cpassword = $("#cpassword").val();
-
-        if(password == cpassword) {
-            if ((login == "") || (email == "") || (second_name == "") || (first_name == "") || (password == "") || (cpassword == "")) {
-                $('#messageDiv').css("display", "none");
-                alert("Wprowadz wszytskie dane");
-                return;
-            } else {
-
-                $.post("/user/create", {
-                    login: login,
-                    password: password,
-                    email: email,
-                    first_name: first_name,
-                    second_name: second_name
-                }, function () {
-                });
-                $('#messageDiv').css("display", "none");
-                alert("Zostaleś poprawnie zarejestrowany");
-            }
-        }
-
-    });
-</script>
+        <script>
+            $('#addtr').on("click", function() {
+        
+                var login = $("#login").val();
+                var email = $("#email").val();
+                var second_name = $("#second_name").val();
+                var first_name = $("#first_name").val();
+                var password = $("#password").val();
+                var cpassword = $("#cpassword").val();
+        
+                if(password == cpassword) {
+                    if ((login == "") || (email == "") || (second_name == "") || (first_name == "") || (password == "") || (cpassword == "")) {
+                        $('#messageDiv').css("display", "none");
+                        alert("Wprowadz wszytskie dane");
+                        return;
+                    } else {
+        
+                        $.post("/user/create", {
+                            login: login,
+                            password: password,
+                            email: email,
+                            first_name: first_name,
+                            second_name: second_name
+                        }, function () {
+                        });
+                        $('#messageDiv').css("display", "none");
+                        alert("Zostaleś poprawnie zarejestrowany");
+                    }
+                }
+        
+            });
+        </script>
+    
 
 </body></html>

@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2a20d86-e68a-421f-94ed-ad564653498b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/images/Beznazwy-1.jpg" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/public/kalkulatory3.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/Produkty1.html" afterPath="$PROJECT_DIR$/src/main/resources/public/Produkty1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/Produkty2.html" afterPath="$PROJECT_DIR$/src/main/resources/public/Produkty2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/Produkty3.html" afterPath="$PROJECT_DIR$/src/main/resources/public/Produkty3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/css/theme.css" afterPath="$PROJECT_DIR$/src/main/resources/public/css/theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/css/theme.less" afterPath="$PROJECT_DIR$/src/main/resources/public/css/theme.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/edytuj_dane.html" afterPath="$PROJECT_DIR$/src/main/resources/public/edytuj_dane.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/kalkulatory.html" afterPath="$PROJECT_DIR$/src/main/resources/public/kalkulatory.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/kalkulatory2.html" afterPath="$PROJECT_DIR$/src/main/resources/public/kalkulatory2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/pozalogowaniu.html" afterPath="$PROJECT_DIR$/src/main/resources/public/pozalogowaniu.html" />
     </list>
     <ignored path="InternetowyPomocnikKulturysty-Core.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,14 +39,34 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
+            <state relative-caret-position="1122">
               <caret line="204" column="22" selection-start-line="204" selection-start-column="22" selection-end-line="204" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pozalogowaniu.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pozalogowaniu.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/public/pozalogowaniu.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edytuj_dane.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/public/edytuj_dane.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="356">
+              <caret line="82" column="58" selection-start-line="82" selection-start-column="58" selection-end-line="82" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pozalogowaniu.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pozalogowaniu.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="121">
@@ -67,41 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Calculator_BMRController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/Calculator_BMRController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="trening1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/trening1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1649">
-              <caret line="97" column="32" selection-start-line="97" selection-start-column="32" selection-end-line="97" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/ProductController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="15" column="70" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
+            <state relative-caret-position="298">
+              <caret line="46" column="55" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="77" />
               <folding />
             </state>
           </provider>
@@ -110,8 +109,28 @@
       <file leaf-file-name="Produkty1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/Produkty1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2380">
-              <caret line="140" column="38" selection-start-line="140" selection-start-column="38" selection-end-line="140" selection-end-column="38" />
+            <state relative-caret-position="366">
+              <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Produkty2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/public/Produkty2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="47" column="78" selection-start-line="47" selection-start-column="78" selection-end-line="47" selection-end-column="78" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Produkty3.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/public/Produkty3.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -148,10 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/model/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/model/ProductDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/model/Product.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/model/Training_exercisesDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/model/Training_exercises.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/Training_exercisesController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/model/Body_statusDao.java" />
@@ -188,7 +203,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/hello/Hello.java" />
         <option value="$PROJECT_DIR$/src/main/resources/public/Dieta.html" />
         <option value="$PROJECT_DIR$/src/main/resources/public/js/poradnik.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/public/Produkty2.html" />
         <option value="$PROJECT_DIR$/src/main/resources/public/js/rejestracja.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/ProductController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/greeting.html" />
@@ -199,6 +213,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/public/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/pozalogowaniu.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/pozalogowaniu.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/Produkty1.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/Produkty2.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/Produkty3.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/edytuj_dane.html" />
       </list>
     </option>
   </component>
@@ -1002,7 +1021,7 @@
       <workItem from="1465007681809" duration="329000" />
       <workItem from="1465036046501" duration="470000" />
       <workItem from="1465036607199" duration="682000" />
-      <workItem from="1465037437862" duration="447000" />
+      <workItem from="1465037437862" duration="1826000" />
     </task>
     <task id="LOCAL-00001" summary="Git test">
       <created>1464880793509</created>
@@ -1109,15 +1128,22 @@
       <option name="project" value="LOCAL" />
       <updated>1465037765756</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="zdj w temp">
+      <created>1465037893910</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1465037893910</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127439000" />
+    <option name="totallyTimeSpent" value="128818000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1132,7 +1158,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.209375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.209375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1171,7 +1197,8 @@
     <MESSAGE value="zmienono button&#10;ustawilem warunki rejestracji i logowania&#10;dodalem treningi 4 podstrony i obrazek&#10;dodanie == hasel&#10;podsrony treningowe i inne" />
     <MESSAGE value="zmienilem buttony ocencie,&#10;poprawone niektore karty i dodane funkcje pod przyciski" />
     <MESSAGE value="ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="ok" />
+    <MESSAGE value="zdj w temp" />
+    <option name="LAST_COMMIT_MESSAGE" value="zdj w temp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1184,20 +1211,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/DietController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/Meal_productsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/kalkulatory.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1206,21 +1219,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/pomoc.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/pozalogowaniu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/informacje.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/Produkty2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/assets/js/holder.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1418,25 +1417,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/Produkty1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2380">
-          <caret line="140" column="38" selection-start-line="140" selection-start-column="38" selection-end-line="140" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/images/Beznazwy-1.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/trening1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1649">
-          <caret line="97" column="32" selection-start-line="97" selection-start-column="32" selection-end-line="97" selection-end-column="32" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -1485,18 +1468,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pozalogowaniu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
+        <state relative-caret-position="1122">
           <caret line="204" column="22" selection-start-line="204" selection-start-column="22" selection-end-line="204" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pozalogowaniu.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/pozalogowaniu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+        <state relative-caret-position="306">
+          <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/trening1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="46" column="55" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/Produkty1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/Produkty2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="47" column="78" selection-start-line="47" selection-start-column="78" selection-end-line="47" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/Produkty3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/edytuj_dane.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="82" column="58" selection-start-line="82" selection-start-column="58" selection-end-line="82" selection-end-column="58" />
           <folding />
         </state>
       </provider>
