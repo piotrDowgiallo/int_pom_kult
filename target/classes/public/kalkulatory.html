@@ -62,8 +62,8 @@
                                 <a href="kalkulatory2.html">BMR - Kalkulator Kalorii<br></a>
                             </li>
                         </ul>
-                    </div>
-                    <div class="col-md-9 text-right">
+                    </div><div class="col-md-4"><div class="text-center well"><h3><ul id="results"></ul></h3></div></div>
+                    <div class="col-md-5 text-right">
                         <form class="form-horizontal" role="form">
                             <div class="form-group has-feedback">
                                 <div class="col-sm-2">
@@ -82,7 +82,7 @@
                                 </div>
                             </div>
                         </form>
-                        <a class="btn btn-info">Oblicz</a>
+                        <a class="btn btn-info" id="oblicz">Oblicz</a>
                     </div>
                 </div>
             </div>
@@ -101,28 +101,36 @@
             $('#oblicz').on("click", function() {
         
                 var weight = $("#weight").val();
-                var age = $("#age").val();
                 var height = $("#height").val();
         
         
                
-                    if ((login == "") || (email == "") || (second_name == "") || (first_name == "") || (password == "") || (cpassword == "")) {
+                    if ((weight == "") || (height == "")) {
                         $('#messageDiv').css("display", "none");
                         alert("Wprowadz wszytskie dane");
                         return;
                     } else {
         
                         $.post("/user/create", {
-                            login: login,
-                            password: password,
-                            email: email,
-                            first_name: first_name,
-                            second_name: second_name
+                            weight : weight,
+                            height : height
                         }, function () {
                         });
-                        $('#messageDiv').css("display", "none");
-                        alert("Twoj wznik to");
                     }
+
+            var $results = $('#results');
+            $.ajax({
+
+                type:'GET',
+                dataType: 'json',
+                url: '/product/get',
+                success: function(results){
+                    $.each(results,function(i, result){
+                        $result.append('Twój wynik to ' + result + ' ');
+                    });
+
+                }
+            });
              });
         </script>
     

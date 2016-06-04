@@ -118,7 +118,7 @@
                 var weight = $("#weight").val();
                 var age = $("#age").val();
                 var height = $("#height").val();
-        
+                var $results = $('#results');
         
                
                     if ((weight == "") || (age == "") || (height == "")) {
@@ -127,27 +127,16 @@
                         return;
                     } else {
         
-                        $.post("/user/create", {
+                        $.post("calculator_bmr/calculate", {
                             weight : weight,
                             age : age,
                             height : height
-                        }, function () {
+                        }, 
+                        success: function(results){
+                            $.each(results,function(i, result){
+                            $result.append('Twój wynik to ' + result + ' ')
                         });
                     }
-
-            var $results = $('#results');
-            $.ajax({
-
-                type:'GET',
-                dataType: 'json',
-                url: '/product/get',
-                success: function(results){
-                    $.each(results,function(i, result){
-                        $result.append('Twój wynik to ' + result + ' ');
-                    });
-
-                }
-            });
              });
         </script>
     

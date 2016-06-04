@@ -5,6 +5,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/kalkulatory.html" afterPath="$PROJECT_DIR$/src/main/resources/public/kalkulatory.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/kalkulatory2.html" afterPath="$PROJECT_DIR$/src/main/resources/public/kalkulatory2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/kalkulatory.html" afterPath="$PROJECT_DIR$/target/classes/public/kalkulatory.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/kalkulatory2.html" afterPath="$PROJECT_DIR$/target/classes/public/kalkulatory2.html" />
     </list>
     <ignored path="InternetowyPomocnikKulturysty-Core.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,16 +60,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pozalogowaniu.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pozalogowaniu.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -88,11 +80,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Produkty1.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Produkty1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/Produkty1.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
               <caret line="151" column="17" selection-start-line="151" selection-start-column="17" selection-end-line="151" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Calculator_BMIController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/Calculator_BMIController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1136,7 +1138,7 @@
       <workItem from="1465046956644" duration="1761000" />
       <workItem from="1465050956954" duration="406000" />
       <workItem from="1465063431378" duration="612000" />
-      <workItem from="1465064203864" duration="1710000" />
+      <workItem from="1465064203864" duration="2326000" />
     </task>
     <task id="LOCAL-00001" summary="Git test">
       <created>1464880793509</created>
@@ -1292,11 +1294,18 @@
       <option name="project" value="LOCAL" />
       <updated>1465065991184</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="kalkulatory22222">
+      <created>1465066363456</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1465066363456</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136955000" />
+    <option name="totallyTimeSpent" value="137571000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -1361,7 +1370,8 @@
     <MESSAGE value="Product return działa w chuj" />
     <MESSAGE value="kalkulatory" />
     <MESSAGE value="kalkulatory2" />
-    <option name="LAST_COMMIT_MESSAGE" value="kalkulatory2" />
+    <MESSAGE value="kalkulatory22222" />
+    <option name="LAST_COMMIT_MESSAGE" value="kalkulatory22222" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1451,13 +1461,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/Calculator_BMIController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -1692,6 +1695,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="151" column="17" selection-start-line="151" selection-start-column="17" selection-end-line="151" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/Calculator_BMIController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
