@@ -69,7 +69,6 @@
                 </div>
             </div>
         </div>
-        <ul id="products"></ul>
         <div class="section">
             <div class="container">
                 <div class="row">
@@ -79,7 +78,7 @@
                                 <h3 class="panel-title text-center">Twoja baza produktów</h3>
                             </div>
                             <div class="panel-body">
-                                <table class="table">
+                                <table class="table" id="tabela">
                                     <thead>
                                         <tr>
                                             <th>#</th>
@@ -90,27 +89,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                            <td>Mark</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                            <td>Mark</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Larry</td>
-                                            <td>the Bird</td>
-                                            <td>@twitter</td>
-                                            <td>Mark</td>
-                                        </tr>
+                                        <ul id="products"></ul>
                                     </tbody>
                                 </table>
                             </div>
@@ -155,7 +134,7 @@
                                     <div class="col-sm-10">
                                         <input type="text" class="form-control" id="fat" placeholder="tłuszcze">
                                     </div>
-                                </div><a class="btn btn-info" id="addtr">Dodaj produkt</a>
+                                </div><a class="btn btn-info" id="addpr">Dodaj produkt</a>
                                 
                             </form>
                         </div>
@@ -178,11 +157,19 @@
         var $products = $('#products');
             $.ajax({
 
-                type:"GET",
+                type:'GET',
+                dataType: 'json',
                 url: '/product/get',
                 success: function(products){
                     $.each(products,function(i, product){
-                        $products.append('<li>moje produkty: '+ product.name +'</li>')
+                        $products.append('                                        
+                            <tr>
+                                <td>'+i+'</td>
+                                <td>'+product.name+'</td>
+                                <td>'+product.proteins+'</td>
+                                <td>'+product.carbohydrates+'</td>
+                                <td>'+product.fat+'</td>
+                            </tr>')
                     });
                 }
             });
@@ -197,6 +184,10 @@
                 $.post("/product/create",{name: name, proteins: proteins, carbohydrates: carbohydrates, fat: fat}, function() {
                     alert( "Dodałes produkt" );
                 });
+                $('#name').val('');
+                $('#proteins').val('');
+                $('#fat').val('');
+                $('#carbohydrates').val('');
             });
         </script>
     
