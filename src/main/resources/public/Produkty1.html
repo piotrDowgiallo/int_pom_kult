@@ -162,15 +162,17 @@
                 url: '/product/get',
                 success: function(products){
                     $.each(products,function(i, product){
-                        $products.append('                                        
+                        $products.append('<tr><td>'+i+'</td><td>'+product.name+'</td><td>'+product.proteins+'</td><td>'+product.carbohydrates+'</td><td>'+product.fat+'</td></tr>');
+                        /*$products.append('
                             <tr>
                                 <td>'+i+'</td>
                                 <td>'+product.name+'</td>
                                 <td>'+product.proteins+'</td>
                                 <td>'+product.carbohydrates+'</td>
                                 <td>'+product.fat+'</td>
-                            </tr>')
+                            </tr>')*/
                     });
+
                 }
             });
 
