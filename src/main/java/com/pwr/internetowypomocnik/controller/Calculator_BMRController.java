@@ -1,9 +1,7 @@
 package com.pwr.internetowypomocnik.controller;
 
 import com.pwr.internetowypomocnik.model.Calculator_BMR;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * Created by Bartek on 16.05.2016.
@@ -11,9 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Calculator_BMRController {
 
-    @RequestMapping("calculator_bmr/calculate")
+    @RequestMapping(value="calculator_bmr/calculate", method = RequestMethod.POST)
     @ResponseBody
-    public String calculate(Double weight, Double height, Double age){
+    public String calculate(@RequestParam ("weight") Double weight, @RequestParam ("height") Double height, @RequestParam ("age") Double age){
         String value_BMR = "";
         try{
             Calculator_BMR calculator_bmr = new Calculator_BMR(weight, height, age);
@@ -28,7 +26,7 @@ public class Calculator_BMRController {
             return "Error calculating BMR: " + ex.toString();
         }
 
-        return "BMR successfully calculated = " + value_BMR + " kcal";
+        return value_BMR;
     }
 
 }

@@ -1,9 +1,7 @@
 package com.pwr.internetowypomocnik.controller;
 
 import com.pwr.internetowypomocnik.model.Calculator_BMI;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * Created by Bartek on 16.05.2016.
@@ -12,9 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Calculator_BMIController {
 
-    @RequestMapping("calculator_bmi/calculate")
+    @RequestMapping(value = "calculator_bmi/calculate", method = RequestMethod.POST)
     @ResponseBody
-    public String calculate(Float weight, Float height){
+    public String calculate(@RequestParam ("weight") Float weight, @RequestParam ("height") Float height){
         String value_BMI = "";
         try{
             Calculator_BMI calculator_bmi = new Calculator_BMI(weight, height);
@@ -24,7 +22,7 @@ public class Calculator_BMIController {
             return "Error calculating BMI: " + ex.toString();
         }
 
-        return "BMI successfully calculated = " + value_BMI;
+        return value_BMI;
     }
 
 }
