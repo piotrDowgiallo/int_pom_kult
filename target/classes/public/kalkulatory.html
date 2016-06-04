@@ -56,10 +56,10 @@
                     <div class="col-md-3 text-center">
                         <ul class="nav nav-pills nav-stacked">
                             <li class="active">
-                                <a href="kalkulatory.html">BMI- Podstawowe zapotrzebowanie energetyczne</a>
+                                <a href="kalkulatory.html">BMI - Wskaźnik masy ciała</a>
                             </li>
                             <li>
-                                <a href="kalkulatory2.html">BMR - Kalkulator Kalorii<br></a>
+                                <a href="kalkulatory2.html">BMR - Podstawowe zapotrzebowanie energetyczne<br></a>
                             </li>
                         </ul>
                     </div><div class="col-md-4"><div class="text-center well"><h3><ul id="results"></ul></h3></div></div>
@@ -67,7 +67,7 @@
                         <form class="form-horizontal" role="form">
                             <div class="form-group has-feedback">
                                 <div class="col-sm-2">
-                                    <label for="inputEmail3" class="control-label">Waga</label>
+                                    <label for="weight" class="control-label">Waga [kg]</label>
                                 </div>
                                 <div class="col-sm-10">
                                     <input type="text" class="form-control" id="weight" placeholder="waga">
@@ -75,7 +75,7 @@
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-2">
-                                    <label for="inputPassword3" class="control-label">Wysokość</label>
+                                    <label for="height" class="control-label">Wzrost [m]</label>
                                 </div>
                                 <div class="col-sm-10">
                                     <input type="text" class="form-control" id="height" placeholder="wysokość">
@@ -111,26 +111,14 @@
                         return;
                     } else {
         
-                        $.post("/user/create", {
+                        $.post("/calculator_bmi/calculate", {
                             weight : weight,
                             height : height
-                        }, function () {
+                        }, function (data) {$('#results').append(data)
                         });
                     }
 
-            var $results = $('#results');
-            $.ajax({
 
-                type:'GET',
-                dataType: 'json',
-                url: '/product/get',
-                success: function(results){
-                    $.each(results,function(i, result){
-                        $result.append('Twój wynik to ' + result + ' ');
-                    });
-
-                }
-            });
              });
         </script>
     

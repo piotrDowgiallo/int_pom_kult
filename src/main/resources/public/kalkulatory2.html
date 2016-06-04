@@ -56,41 +56,34 @@
                     <div class="col-md-3 text-center">
                         <ul class="nav nav-pills nav-stacked">
                             <li>
-                                <a href="kalkulatory.html">BMI- Podstawowe zapotrzebowanie energetyczne</a>
+                                <a href="kalkulatory.html">BMI - Wskaźnik masy ciała</a>
                             </li>
                             <li class="active">
-                                <a href="kalkulatory2.html">BMR - Kalkulator Kalorii</a>
+                                <a href="kalkulatory2.html">BMR - Podstawowe zapotrzebowanie energetyczne</a>
                             </li>
                         </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="text-center well">
-                            <h3>
-                                <ul id="results"></ul>
-                            </h3>
-                        </div>
-                    </div>
+                    </div><div class="col-md-4"><div class="text-center well"><h3><ul id="results"></ul></h3></div></div>
                     <div class="col-md-5 text-right">
                         <form class="form-horizontal" role="form">
                             <div class="form-group has-feedback">
                                 <div class="col-sm-2">
-                                    <label for="inputEmail3" class="control-label">Waga</label>
+                                    <label for="weight" class="control-label">Waga [kg]</label>
                                 </div>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputEmail3" placeholder="waga">
+                                    <input type="text" class="form-control" id="weight" placeholder="waga">
                                 </div>
                             </div>
                             <div class="form-group has-feedback">
                                 <div class="col-sm-2">
-                                    <label for="inputEmail3" class="control-label">Wiek</label>
+                                    <label for="age" class="control-label">Wiek</label>
                                 </div>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputEmail3" placeholder="wiek">
+                                    <input type="text" class="form-control" id="age" placeholder="wiek">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-2">
-                                    <label for="inputPassword3" class="control-label">Wysokość</label>
+                                    <label for="height" class="control-label">Wzrost [cm]</label>
                                 </div>
                                 <div class="col-sm-10">
                                     <input type="text" class="form-control" id="height" placeholder="wysokość">
@@ -118,27 +111,18 @@
                 var weight = $("#weight").val();
                 var age = $("#age").val();
                 var height = $("#height").val();
-                var $results = $('#results');
         
-               
-                    if ((weight == "") || (age == "") || (height == "")) {
+                        if ((weight == "") || (age == "") || (height == "")) {
                         $('#messageDiv').css("display", "none");
                         alert("Wprowadz wszytskie dane");
                         return;
                     } else {
         
-                        $.post("calculator_bmr/calculate", {
+                        $.post("/calculator_bmr/calculate", {
                             weight : weight,
                             age : age,
                             height : height
-                        },
-
-                        success: function(results){
-                            $.each(results,function(i, result){
-                                $result.append('Twój wynik to ' + result + ' ');
-                         });
-                         }
-                        );
+                        }, function (data) {$('#results').append(data)});
                     }
              });
         </script>

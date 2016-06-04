@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class Calculator_BMIController {
 
-    @RequestMapping(value = "calculator_bmi/calculate", method = RequestMethod.POST)
-    @ResponseBody
-    public String calculate(@RequestParam ("weight") Float weight, @RequestParam ("height") Float height){
+    @RequestMapping(value = "/calculator_bmi/calculate", method = RequestMethod.POST)
+    public @ResponseBody String calculate(@RequestParam ("weight") Float weight, @RequestParam ("height") Float height){
+        System.out.println("In calculator method");
         String value_BMI = "";
         try{
             Calculator_BMI calculator_bmi = new Calculator_BMI(weight, height);
@@ -21,7 +21,7 @@ public class Calculator_BMIController {
         catch (Exception ex){
             return "Error calculating BMI: " + ex.toString();
         }
-
+        System.out.println("Value BMI: " + value_BMI);
         return value_BMI;
     }
 
