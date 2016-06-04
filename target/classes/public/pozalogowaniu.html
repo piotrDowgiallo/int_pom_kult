@@ -1,10 +1,15 @@
 <html><head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
+        <title>Siła !</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet">
+        <link href="css/theme.css" rel="stylesheet" type="text/css">
+        <script src="jquery-2.2.3.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <script type="text/javascript" src="script.js"></script>
     </head><body id="startowa"><div class="section">
             <div class="container">
                 <div class="row">
@@ -59,4 +64,38 @@
                     <a href="kontakt.html">Kontakt</a>
                 </li>
             </ul>
-        </footer></body></html>
+        </footer>
+    <script>
+
+    $('#addtr').on("click", function() {
+
+        var login = $("#login").val();
+        var email = $("#email").val();
+        var second_name = $("#second_name").val();
+        var first_name = $("#first_name").val();
+        var password = $("#password").val();
+        var cpassword = $("#cpassword").val();
+
+        if(password == cpassword) {
+            if ((login == "") || (email == "") || (second_name == "") || (first_name == "") || (password == "") || (cpassword == "")) {
+                $('#messageDiv').css("display", "none");
+                alert("Wprowadz wszytskie dane");
+                return;
+            } else {
+
+                $.post("/user/create", {
+                    login: login,
+                    password: password,
+                    email: email,
+                    first_name: first_name,
+                    second_name: second_name
+                }, function () {
+                });
+                $('#messageDiv').css("display", "none");
+                alert("Zostaleś poprawnie zarejestrowany");
+            }
+        }
+
+    });
+</script>
+</body></html>
