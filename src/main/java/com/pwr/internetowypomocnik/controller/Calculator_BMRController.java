@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class Calculator_BMRController {
 
-    @RequestMapping(value="calculator_bmr/calculate", method = RequestMethod.POST)
-    @ResponseBody
-    public String calculate(@RequestParam ("weight") Double weight, @RequestParam ("height") Double height, @RequestParam ("age") Double age){
+    @RequestMapping(value="/calculator_bmr/calculate", method = RequestMethod.POST)
+
+    public @ResponseBody String calculate(@RequestParam ("weight") Double weight, @RequestParam ("height") Double height, @RequestParam ("age") Double age){
         String value_BMR = "";
         try{
             Calculator_BMR calculator_bmr = new Calculator_BMR(weight, height, age);
