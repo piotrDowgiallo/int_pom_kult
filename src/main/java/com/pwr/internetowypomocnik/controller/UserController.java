@@ -60,8 +60,8 @@ public class UserController {
     public String login(@RequestParam(value = "username", required = false) String username, @RequestParam(value = "password", required = false) String password){
         System.out.println("Login: " + username + " password: " + password);
         try{
-            Iterable<User> userArrayList = userDao.findAll();
-            Iterator<User> iterator = userArrayList.iterator();
+            Iterable<User> userList = userDao.findAll();
+            Iterator<User> iterator = userList.iterator();
 
             while(iterator.hasNext())
             {

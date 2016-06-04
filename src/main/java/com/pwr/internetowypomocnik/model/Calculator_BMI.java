@@ -13,12 +13,10 @@ public class Calculator_BMI {
         this.height = height;
     }
 
-    public void setMass(Float weight) {
-        this.weight = weight;
-    }
+    public void setMass(Float weight) { this.weight = weight/100; }
 
     public void setHeight(Float height) {
-        this.height = height;
+        this.height = height/100;
     }
 
     public Float calculate() {

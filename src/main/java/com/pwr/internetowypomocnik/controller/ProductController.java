@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Iterator;
+
 /**
  * Created by Piotr on 2016-04-22.
  */
@@ -29,6 +31,25 @@ public class ProductController {
         }
         return "product successfully created with id = " + id_product;
     }
+
+    @RequestMapping(value="/product/get")
+    public @ResponseBody Product getProducts()
+    {
+        Iterable<Product> productList = null;
+        Product tmpProduct = null;
+        try{
+            productList = productDao.findAll();
+            Iterator<Product> productIterator = productList.iterator();
+            tmpProduct = productIterator.next();
+
+        }
+        catch (Exception ex){
+            //return "Error receiving products:" + ex.toString();
+        }
+        return tmpProduct;
+    }
+
+
 
     /**
      * GET /delete  --> Delete the user having the passed id.
