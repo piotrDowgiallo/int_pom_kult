@@ -33,7 +33,7 @@ public class ProductController {
     }
 
     @RequestMapping(value="/product/get")
-    public @ResponseBody Product getProducts()
+    public @ResponseBody Iterable<Product> getProducts()
     {
         Iterable<Product> productList = null;
         Product tmpProduct = null;
@@ -46,7 +46,7 @@ public class ProductController {
         catch (Exception ex){
             //return "Error receiving products:" + ex.toString();
         }
-        return tmpProduct;
+        return productList;
     }
 
 
