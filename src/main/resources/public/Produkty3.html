@@ -83,33 +83,10 @@
                                         <tr>
                                             <th>#</th>
                                             <th>Nazwa produktu</th>
-                                            <th>Data</th>
-                                            
-                                            
+                                            <th>Data</th>    
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Larry</td>
-                                            <td>the Bird</td>
-                                            
-                                            
-                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -124,7 +101,7 @@
                             </div>
                             <div class="btn-group"><a class="btn btn-success dropdown-toggle" data-toggle="dropdown"> Wybierz produkt z bazy<i class="fa fa-caret-down"></i></a><ul class="dropdown-menu" role="menu"><li><a href="#">Action</a></li></ul></div><form class="form-horizontal" role="form">
                                 
-                                
+                            <br>  
                                 
                                 <div class="form-group">
                                     <div class="col-sm-2">
@@ -135,7 +112,7 @@
                                     </div>
                                 </div>
                                 
-                            </form><a class="btn btn-info" id="addtr">Dodaj posiłek</a>
+                            </form><a class="btn btn-info" id="add">Dodaj posiłek</a>
                         </div>
                     </div>
                 </div>
@@ -152,7 +129,22 @@
             </ul>
         </footer>
         <script>
-            $('#addpr').on("click", function() {
+                var $products = $('#products');
+            $.ajax({
+
+                type:'GET',
+                dataType: 'json',
+                url: '/meal/get',
+                success: function(products){
+                    $.each(products,function(i, product){
+                        $('#tabela tbody').append('<tr><td>' + i + '</td><td>' + product.name + '</td><td>' + product.date + '</td></tr>');
+                    });
+
+                }
+            });
+
+
+            $('#add').on("click", function() {
 
                 var name = $("#name").val();
                 var proteins = $("#proteins").val();
