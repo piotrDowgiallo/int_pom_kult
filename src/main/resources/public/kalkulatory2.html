@@ -114,16 +114,20 @@
         
                         if ((weight == "") || (age == "") || (height == "")) {
                         $('#messageDiv').css("display", "none");
-                        alert("Wprowadz wszytskie dane");
+                        alert("Wprowadz wszystkie dane");
                         return;
                     } else {
-        
+                        $('#results').empty();
                         $.post("/calculator_bmr/calculate", {
                             weight : weight,
                             age : age,
                             height : height
                         }, function (data) {$('#results').append(data)});
-                    }
+
+                            $('#weight').val('');
+                            $('#height').val('');
+                            $('#age').val('');
+                        }
              });
         </script>
     
