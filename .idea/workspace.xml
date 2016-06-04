@@ -1136,7 +1136,7 @@
       <workItem from="1465046956644" duration="1761000" />
       <workItem from="1465050956954" duration="406000" />
       <workItem from="1465063431378" duration="612000" />
-      <workItem from="1465064203864" duration="1343000" />
+      <workItem from="1465064203864" duration="1710000" />
     </task>
     <task id="LOCAL-00001" summary="Git test">
       <created>1464880793509</created>
@@ -1285,11 +1285,18 @@
       <option name="project" value="LOCAL" />
       <updated>1465065791540</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="kalkulatory2">
+      <created>1465065991184</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1465065991184</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136588000" />
+    <option name="totallyTimeSpent" value="136955000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -1353,7 +1360,8 @@
     <MESSAGE value="Product return" />
     <MESSAGE value="Product return działa w chuj" />
     <MESSAGE value="kalkulatory" />
-    <option name="LAST_COMMIT_MESSAGE" value="kalkulatory" />
+    <MESSAGE value="kalkulatory2" />
+    <option name="LAST_COMMIT_MESSAGE" value="kalkulatory2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
