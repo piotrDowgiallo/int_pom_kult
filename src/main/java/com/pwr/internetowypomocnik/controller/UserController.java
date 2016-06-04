@@ -59,7 +59,7 @@ public class UserController {
     @RequestMapping(value="/user/login", method = RequestMethod.GET)
     public String login(@RequestParam(value = "username", required = false) String username, @RequestParam(value = "password", required = false) String password){
         System.out.println("Login: " + username + " password: " + password);
-        /*try{
+        try{
             Iterable<User> userArrayList = userDao.findAll();
             Iterator<User> iterator = userArrayList.iterator();
 
@@ -70,14 +70,15 @@ public class UserController {
                 if(username.equals(tmp.getLogin()) && password.equals(tmp.getPassword()))
                 {
                     System.out.println("Found user!");
-                    break;
+                    return "pozalogowaniu";
+
                 }
             }
         }
         catch (Exception ex){
             return "Error loging the user: " + ex.toString();
-        }*/
-        return "informacje";
+        }
+        return "index";
     }
     /**
      * GET /delete  --> Delete the user having the passed id.

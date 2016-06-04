@@ -198,7 +198,7 @@
         }
         //alert("Login: " + username + " Password: " + password);
         //$.get("/user/login", {username:username, password:password});
-        $.get("/greeting", function( data ) {
+        $.get("/user/login", {username:username, password:password}, function( data ) {
             $( 'body' ).html( data );});
         /*                $.ajax({
          url : "/user/login",
