@@ -82,7 +82,7 @@
                                                 <h3 class="panel-title text-center">Twoje rekordy</h3>
                                             </div>
                                             <div class="panel-body">
-                                                <table class="table">
+                                                <table class="table" id="tabela">
                                                     <thead>
                                                         <tr>
                                                             <th>#</th>
@@ -91,21 +91,6 @@
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>Mark</td>
-                                                            <td>Otto</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2</td>
-                                                            <td>Jacob</td>
-                                                            <td>Thornton</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3</td>
-                                                            <td>Larry</td>
-                                                            <td>the Bird</td>
-                                                        </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -119,25 +104,26 @@
                                                         <h1 class="panel-title text-center">Dodaj nowy rekord !</h1>
                                                     </div>
                                                 </div>
-                                                <form class="form-horizontal text-left" role="form">
-                                                    <div class="form-group">
-                                                        <div class="col-sm-2">
-                                                            <label for="fat" class="control-label">Nazwa</label>
-                                                        </div>
-                                                        <div class="col-sm-10">
-                                                            <input type="text" class="form-control" id="fat" placeholder="Nazwa ćwiczenia">
-                                                        </div>
-                                                    </div>
+                                                <div class="btn-group">
+                                <a class="btn btn-success dropdown-toggle" data-toggle="dropdown"> Wybierz ćwiczenie z bazy<i class="fa fa-caret-down"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    
+                                    <li>
+                                        <a href="#">Action</a>
+                                    </li>
+                                </ul>
+                            </div><form class="form-horizontal text-left" role="form">
+                               <br>                      
                                                     <div class="form-group">
                                                         <div class="col-sm-2">
                                                             <label for="fat" class="control-label">Waga</label>
                                                         </div>
                                                         <div class="col-sm-10">
-                                                            <input type="text" class="form-control" id="fat" placeholder="waga maksymalna">
+                                                            <input type="text" class="form-control" id="maximum" placeholder="waga maksymalna">
                                                         </div>
                                                     </div>
-                                                    
-                                                </form><a class="btn btn-info" id="addtr">Dodaj rekord</a>
+                                                </form>
+                                                <a class="btn btn-info" id="addtr">Dodaj rekord</a>
                                             </div>
                                         </div>
                                     </div>
@@ -159,34 +145,41 @@
             </ul>
         </footer>
         <script>
+
+        var $records = $('#records');
+            $.ajax({
+
+                type:'GET',
+                dataType: 'json',
+                url: '/record/get',
+                success: function(records){
+                    $.each(records,function(i, record){
+                        $('#tabela tbody').append('<tr><td>' + i + '</td><td>' + record.exercise_id + '</td><td>' + record.maximum + '</td></tr>');
+                    });
+
+                }
+            });
+
+
             $('#addtr').on("click", function() {
         
-                var login = $("#login").val();
-                var email = $("#email").val();
-                var second_name = $("#second_name").val();
-                var first_name = $("#first_name").val();
-                var password = $("#password").val();
-                var cpassword = $("#cpassword").val();
+                var maximum = $("#maximum").val();
         
-                if(password == cpassword) {
-                    if ((login == "") || (email == "") || (second_name == "") || (first_name == "") || (password == "") || (cpassword == "")) {
+
+                    if ((maximum == "")) {
                         $('#messageDiv').css("display", "none");
                         alert("Wprowadz wszytskie dane");
                         return;
                     } else {
         
                         $.post("/user/create", {
-                            login: login,
-                            password: password,
-                            email: email,
-                            first_name: first_name,
-                            second_name: second_name
+                            maximum: maximum
                         }, function () {
                         });
                         $('#messageDiv').css("display", "none");
-                        alert("Zostaleś poprawnie zarejestrowany");
+                        alert("Zostaleś poprawnie nowy rekord !");
                     }
-                }
+                
         
             });
         </script>

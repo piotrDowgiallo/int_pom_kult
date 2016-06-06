@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Iterator;
+
 /**
  * Created by Piotr on 2016-04-22.
  */
@@ -30,6 +32,25 @@ public class RecordController {
         }
         return "record successfully created with id = " + id_record;
     }
+
+
+
+    @RequestMapping(value="/record/get")
+    public @ResponseBody Iterable<Record> getRecords()
+    {
+        Iterable<Record> recordList = null;
+        Record tmpRecord = null;
+        try{
+            recordList = recordDao.findAll();
+            Iterator<Record> recordIterator = recordList.iterator();
+            tmpRecord = recordIterator.next();
+
+        }
+        catch (Exception ex){
+        }
+        return recordList;
+    }
+
 
     /**
      * GET /delete  --> Delete the record having the passed id.

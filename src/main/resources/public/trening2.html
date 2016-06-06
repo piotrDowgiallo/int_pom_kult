@@ -49,7 +49,8 @@
                     </div>
                 </div>
             </div>
-        </div><div class="section">
+        </div>
+        <div class="section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -68,7 +69,6 @@
                 </div>
             </div>
         </div>
-        
         <div class="section">
             <div class="container">
                 <div class="row">
@@ -79,10 +79,10 @@
                                     <div class="col-md-8">
                                         <div class="panel panel-primary">
                                             <div class="panel-heading">
-                                                <h3 class="panel-title text-center">Twoja baza produktów</h3>
+                                                <h3 class="panel-title text-center">Twoja baza ćwiczeń</h3>
                                             </div>
                                             <div class="panel-body">
-                                                <table class="table">
+                                                <table class="table" id="tabela2">
                                                     <thead>
                                                         <tr>
                                                             <th>#</th>
@@ -93,27 +93,6 @@
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>Mark</td>
-                                                            <td>Otto</td>
-                                                            <td>@mdo</td>
-                                                            <td>Mark</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2</td>
-                                                            <td>Jacob</td>
-                                                            <td>Thornton</td>
-                                                            <td>@fat</td>
-                                                            <td>Mark</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3</td>
-                                                            <td>Larry</td>
-                                                            <td>the Bird</td>
-                                                            <td>@twitter</td>
-                                                            <td>Mark</td>
-                                                        </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -133,7 +112,7 @@
                                                             <label for="inputEmail3" class="control-label">Nazwa</label>
                                                         </div>
                                                         <div class="col-sm-10">
-                                                            <input type="text" class="form-control" id="fat" placeholder="Nazwa ćwiczenia">
+                                                            <input type="text" class="form-control" id="name" placeholder="Nazwa ćwiczenia">
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
@@ -141,7 +120,7 @@
                                                             <label for="fat" class="control-label">Partie mięśniowe</label>
                                                         </div>
                                                         <div class="col-sm-10">
-                                                            <input type="text" class="form-control" id="fat" placeholder="partie mięśniowe">
+                                                            <input type="text" class="form-control" id="muscle_group" placeholder="partie mięśniowe">
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
@@ -149,7 +128,7 @@
                                                             <label for="fat" class="control-label">Opis</label>
                                                         </div>
                                                         <div class="col-sm-10">
-                                                            <input type="text" class="form-control" id="fat" placeholder="opis">
+                                                            <input type="text" class="form-control" id="description" placeholder="opis">
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
@@ -157,11 +136,11 @@
                                                             <label for="fat" class="control-label">Poziom trudności</label>
                                                         </div>
                                                         <div class="col-sm-10">
-                                                            <input type="text" class="form-control" id="fat" placeholder="poziom trudności">
+                                                            <input type="text" class="form-control" id="difficulty" placeholder="poziom trudności">
                                                         </div>
                                                     </div>
-                                                    
-                                                </form><a class="btn btn-info" id="addtr">Dodaj ćwiczenie</a>
+                                                </form>
+                                                <a class="btn btn-info" id="addtr">Dodaj ćwiczenie</a>
                                             </div>
                                         </div>
                                     </div>
@@ -183,34 +162,53 @@
             </ul>
         </footer>
         <script>
+
+        var $exercises = $('#exercises');
+            $.ajax({
+
+                type:'GET',
+                dataType: 'json',
+                url: '/exercise/get',
+                success: function(exercises){
+                    $.each(exercises,function(i, exercise){
+                        $('#tabela2 tbody').append('<tr><td>'+i+'</td><td>'+exercise.name+'</td><td>'+exercise.muscle_group+'</td><td>'+exercise.description+'</td><td>'+exercise.difficulty + '</td></tr>');
+                    });
+
+                }
+            });
+
+
+
             $('#addtr').on("click", function() {
         
-                var login = $("#login").val();
-                var email = $("#email").val();
-                var second_name = $("#second_name").val();
-                var first_name = $("#first_name").val();
-                var password = $("#password").val();
-                var cpassword = $("#cpassword").val();
-        
-                if(password == cpassword) {
-                    if ((login == "") || (email == "") || (second_name == "") || (first_name == "") || (password == "") || (cpassword == "")) {
+                var name = $("#name").val();
+                var muscle_group = $("#muscle_group").val();
+                var description = $("#description").val();
+                var difficulty = $("#difficulty").val();
+
+
+                    if ((name == "") || (muscle_group == "") || (description == "") || (difficulty == "")) {
                         $('#messageDiv').css("display", "none");
                         alert("Wprowadz wszytskie dane");
                         return;
                     } else {
         
-                        $.post("/user/create", {
-                            login: login,
-                            password: password,
-                            email: email,
-                            first_name: first_name,
-                            second_name: second_name
+                        $.post("/exercise/create", {
+                            name: name,
+                            muscle_group: muscle_group,
+                            description: description,
+                            difficulty: difficulty
                         }, function () {
                         });
                         $('#messageDiv').css("display", "none");
-                        alert("Zostaleś poprawnie zarejestrowany");
+                        alert("Dodałeś ćwiczenie do bazy");
+                    $('#name').val('');
+                    $('#muscle_group').val('');
+                    $('#description').val('');
+                    $('#difficulty').val('');
+
                     }
-                }
+                
         
             });
         </script>

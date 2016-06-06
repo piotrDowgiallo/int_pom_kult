@@ -117,7 +117,7 @@
                         alert("Wprowadz wszystkie dane");
                         return;
                     } else {
-        
+                        $('#results').empty();
                         $.post("/calculator_bmr/calculate", {
                             weight : weight,
                             age : age,

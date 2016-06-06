@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2a20d86-e68a-421f-94ed-ad564653498b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/pwr/internetowypomocnik/controller/ExerciseController.class" afterPath="$PROJECT_DIR$/target/classes/com/pwr/internetowypomocnik/controller/ExerciseController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/Produkty3.html" afterPath="$PROJECT_DIR$/src/main/resources/public/Produkty3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/ExerciseController.java" afterPath="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/ExerciseController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/RecordController.java" afterPath="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/RecordController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/trening1.html" afterPath="$PROJECT_DIR$/src/main/resources/public/trening1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/trening2.html" afterPath="$PROJECT_DIR$/src/main/resources/public/trening2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/trening3.html" afterPath="$PROJECT_DIR$/src/main/resources/public/trening3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/Produkty3.html" afterPath="$PROJECT_DIR$/target/classes/public/Produkty3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/kalkulatory2.html" afterPath="$PROJECT_DIR$/target/classes/public/kalkulatory2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/trening1.html" afterPath="$PROJECT_DIR$/target/classes/public/trening1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/trening2.html" afterPath="$PROJECT_DIR$/target/classes/public/trening2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/public/trening3.html" afterPath="$PROJECT_DIR$/target/classes/public/trening3.html" />
     </list>
     <ignored path="InternetowyPomocnikKulturysty-Core.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,60 +37,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Calculator_BMIController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/Calculator_BMIController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Calculator_BMRController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/Calculator_BMRController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Calculator_BMR.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/model/Calculator_BMR.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Calculator_BMI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/model/Calculator_BMI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="trening1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/public/trening1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="33" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="77" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="kalkulatory.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/kalkulatory.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
+            <state relative-caret-position="1972">
               <caret line="116" column="43" selection-start-line="116" selection-start-column="43" selection-end-line="116" selection-end-column="43" />
               <folding />
             </state>
@@ -91,7 +50,7 @@
       <file leaf-file-name="kalkulatory2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/kalkulatory2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-32">
+            <state relative-caret-position="1445">
               <caret line="85" column="16" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="16" />
               <folding />
             </state>
@@ -101,7 +60,7 @@
       <file leaf-file-name="Produkty3.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/Produkty3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
+            <state relative-caret-position="1802">
               <caret line="106" column="56" selection-start-line="106" selection-start-column="56" selection-end-line="106" selection-end-column="56" />
               <folding />
             </state>
@@ -111,19 +70,77 @@
       <file leaf-file-name="trening2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/trening2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-561">
+            <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1465176056324" expanded="true" signature="10971:10994" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trening3.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/public/trening3.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="trening3.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/public/trening3.html">
+      <file leaf-file-name="RecordController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/RecordController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+              <caret line="38" column="52" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrainingController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/TrainingController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExerciseController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/ExerciseController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Training_exercisesController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/Training_exercisesController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/ProductController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="16">
+              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -165,7 +182,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/DietController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/model/ExerciseDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/model/Exercise.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/ExerciseController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/model/MealDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/model/Meal.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/MealController.java" />
@@ -175,7 +191,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/Meal_productsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/model/Record.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/model/RecordDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/RecordController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/model/Training.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/model/TrainingDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/TrainingController.java" />
@@ -210,6 +225,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/Calculator_BMRController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/public/trening3.html" />
         <option value="$PROJECT_DIR$/src/main/resources/public/Produkty3.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/ExerciseController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/RecordController.java" />
       </list>
     </option>
   </component>
@@ -262,9 +279,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -505,6 +521,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1050,7 +1067,8 @@
       <workItem from="1465063431378" duration="612000" />
       <workItem from="1465064203864" duration="1343000" />
       <workItem from="1465066148373" duration="2719000" />
-      <workItem from="1465069436082" duration="294000" />
+      <workItem from="1465069436082" duration="323000" />
+      <workItem from="1465171845538" duration="4107000" />
     </task>
     <task id="LOCAL-00001" summary="Git test">
       <created>1464880793509</created>
@@ -1220,11 +1238,18 @@
       <option name="project" value="LOCAL" />
       <updated>1465069475930</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Kalkulatory - działające2.1v">
+      <created>1465069740632</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1465069740632</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139601000" />
+    <option name="totallyTimeSpent" value="143737000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -1290,7 +1315,8 @@
     <MESSAGE value="kalkulatory" />
     <MESSAGE value="Kalkulatory - działające" />
     <MESSAGE value="Kalkulatory - działające2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kalkulatory - działające2" />
+    <MESSAGE value="Kalkulatory - działające2.1v" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kalkulatory - działające2.1v" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1303,34 +1329,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/assets/js/ie-emulation-modes-warning.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/assets/js/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/jquery-2.2.3.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/js/poradnik.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/Body_statusController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
@@ -1525,18 +1523,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="946">
-          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/Produkty2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1544,7 +1534,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2567">
           <caret line="151" column="17" selection-start-line="151" selection-start-column="17" selection-end-line="151" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1552,7 +1541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1207">
           <caret line="80" column="21" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1598,7 +1586,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/kalkulatory.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
+        <state relative-caret-position="1972">
           <caret line="116" column="43" selection-start-line="116" selection-start-column="43" selection-end-line="116" selection-end-column="43" />
           <folding />
         </state>
@@ -1606,7 +1594,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/kalkulatory2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-32">
+        <state relative-caret-position="1445">
           <caret line="85" column="16" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="16" />
           <folding />
         </state>
@@ -1614,15 +1602,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/trening2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-561">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1465176056324" expanded="true" signature="10971:10994" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/Produkty3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
+        <state relative-caret-position="1802">
           <caret line="106" column="56" selection-start-line="106" selection-start-column="56" selection-end-line="106" selection-end-column="56" />
           <folding />
         </state>
@@ -1631,8 +1621,54 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/trening3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+          <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/TrainingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/Training_exercisesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/RecordController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="38" column="52" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/ExerciseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
