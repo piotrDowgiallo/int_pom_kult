@@ -78,7 +78,7 @@
                                 <h3 class="panel-title text-center">Ogólna baza produktów</h3>
                             </div>
                             <div class="panel-body">
-                                <table class="table">
+                                <table class="table" id="tabela">
                                     <thead>
                                         <tr>
                                             <th>#</th>
@@ -134,12 +134,12 @@
             $('#szuk').on("click", function() {
 
                 var $products = $('#products');
-                var $name = $('#name');
+                var name = $('#name').val();
                 alert(name);
                 $.ajax({
 
                 type:'GET',
-                data: {name : "jablko"},
+                data: {name : name},
                 dataType: 'json',
                 url: '/product/search',
                 success: function(products){
