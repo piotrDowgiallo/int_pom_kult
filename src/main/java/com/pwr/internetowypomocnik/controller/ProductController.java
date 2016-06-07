@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
@@ -49,6 +50,35 @@ public class ProductController {
         return productList;
     }
 
+    @RequestMapping(value="/product/search", method = RequestMethod.GET)
+    public @ResponseBody Iterable<Product> searchProducts(@RequestParam("name") String name)
+    {
+        Iterable<Product> productList;
+        ArrayList<Product> foundList = new ArrayList<Product>();
+        Product tmpProduct;
+        try{
+            productList = productDao.findAll();
+            Iterator<Product> productIterator = productList.iterator();
+
+            while(productIterator.hasNext()){
+                tmpProduct = productIterator.next();
+                System.out.println("Product name = " + tmpProduct.getName() + "  param  " + name );
+                if(name.equals(tmpProduct.getName())){
+                    foundList.add(tmpProduct);
+                    System.out.println("Product found: name = " + tmpProduct.getName());
+                }
+            }
+
+            Iterator<Product> arrayIterator = foundList.iterator();
+            while(arrayIterator.hasNext())
+                System.out.println(arrayIterator.next().getName());
+
+        }
+        catch (Exception ex){
+            //return "Error receiving products:" + ex.toString();
+        }
+        return (Iterable<Product>) foundList;
+    }
 
 
     /**
