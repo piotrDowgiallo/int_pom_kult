@@ -159,10 +159,10 @@
 </div><footer class="section section-primary" data-pgc-define="">
     <ul class="pager">
         <li>
-            <a href="pomoc.html">Pomoc</a>
-            <a href="tworcy.html">Twórcy</a>
-            <a href="informacje.html">Informacje</a>
-            <a href="kontakt.html">Kontakt</a>
+            <a id="pomoc">Pomoc</a>
+            <a id="tworcy">Twórcy</a>
+            <a id="informacje">Informacje</a>
+            <a id="kontakt">Kontakt</a>
         </li>
     </ul>
 </footer>
@@ -196,36 +196,32 @@
         //$.get("/user/login", {username:username, password:password});
         $.get("/user/login", {username:username, password:password}, function( data ) {
             $( 'body' ).html( data );});
-        /*                $.ajax({
-         url : "/user/login",
-         method : get,
-         data : {
-         username : username,
-         password : password
-         },
-         success : function(results){
-         if(results != null && results != ""){
-         showMessage(results);
-         $('#messageDiv').css("display","block");
-         }else{
-         $('#messageDiv').css("display","none");
-         $('#messageDiv').html("");
-         alert("Some exception occurred! Please try again.");
-         }
-         }
-         });*/
+
     });
 
-    //function to display message to the user
-    /*function showMessage(results){
-     if(results == 'SUCCESS'){
-     $('#messageDiv').html("<font color='green'>You are successfully logged in. </font>")
-     }else if(results == 'FAILURE'){
-     $('#messageDiv').html("<font color='red'>Username or password incorrect </font>")
-     }
-     }*/
 
 
+
+    $('#kontakt').on("click", function() {
+        $('#messageDiv').css("display", "none");
+        alert("0-700-880-390");
+
+    });
+    $('#informacje').on("click", function() {
+        $('#messageDiv').css("display", "none");
+        alert("JAVA jest extra");
+
+    });
+    $('#pomoc').on("click", function() {
+        $('#messageDiv').css("display", "none");
+        alert("HELP");
+
+    });
+    $('#tworcy').on("click", function() {
+        $('#messageDiv').css("display", "none");
+        alert("Najelpsi z najlepszych");
+
+    });
 
 
 
