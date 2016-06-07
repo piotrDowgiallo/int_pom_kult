@@ -14,13 +14,13 @@ public class Training_exercises {
     @GeneratedValue(strategy = GenerationType.AUTO)
 
     private long id_training_exercises;
-    private Integer exercise_id;
-    private Integer training_id;
+    private long exercise_id;
+    private long training_id;
     private Integer series;
     private Integer repetitions;
     private Float load_kg;
 
-    public Training_exercises(Integer exercise_id, Integer training_id, Integer series, Integer repetitions, Float load_kg) {
+    public Training_exercises(long exercise_id, long training_id, Integer series, Integer repetitions, Float load_kg) {
         this.exercise_id = exercise_id;
         this.training_id = training_id;
         this.series = series;
@@ -43,7 +43,7 @@ public class Training_exercises {
         this.id_training_exercises = id_training_exercises;
     }
 
-    public Integer getExercise_id() {
+    public long getExercise_id() {
         return exercise_id;
     }
 
@@ -51,7 +51,7 @@ public class Training_exercises {
         this.exercise_id = exercise_id;
     }
 
-    public Integer getTraining_id() {
+    public long getTraining_id() {
         return training_id;
     }
 
