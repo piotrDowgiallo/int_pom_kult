@@ -1,0 +1,179 @@
+<html><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Siła !</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet">
+        <link href="css/theme.css" rel="stylesheet" type="text/css">
+        <script src="jquery-2.2.3.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head><body data-spy="scroll" class="">
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="images/Beznazwy-1.jpg" class="img-responsive">
+                    </div>
+                </div>
+                <div class="row">
+                    <hr>
+                </div>
+                <div class="row text-muted">
+                    
+                    <div class="col-md-8">
+                        <ul class="media-list">
+                            <li class="media">
+                                <a class="pull-left" href="#"> </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Błędny login</h4>Pamiętaj w życiu nic nie jest
+                                    ważniejsze od masy ! Każda masa jest dobra, zobacz na przykład na słońce
+                                    zrobiło mase i ma wszytskie planety wokół siebie. Masa, masa i jeszcze
+                                    raz masa.&nbsp;</div>
+                            </li>
+                            <li class="media">
+                                <a class="pull-left" href="#"> </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        
+                        <form class="form-horizontal" role="form">
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <a class="btn btn-info" id="rej">Wróć nas tronę główną</a>
+                                    <div id="messages"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="section section-primary" data-pgc-define="">
+            <ul class="pager">
+                <li>
+                    <a href="pomoc.html">Pomoc</a>
+                    <a href="tworcy.html">Twórcy</a>
+                    <a href="informacje.html">Informacje</a>
+                    <a href="kontakt.html">Kontakt</a>
+                </li>
+            </ul>
+        </footer>
+        <script language="Javascript">
+            function capLock(e){
+                kc = e.keyCode?e.keyCode:e.which;
+                sk = e.shiftKey?e.shiftKey:((kc == 16)?true:false);
+                if(((kc >= 65 && kc <= 90) && !sk)||((kc >= 97 && kc <= 122) && sk))
+                    document.getElementById('divMayus').style.visibility = 'visible';
+                else
+                    document.getElementById('divMayus').style.visibility = 'hidden';
+            }
+        </script>
+        <script>
+            $('#login_button').on('click', function(){
+                var username = $("#login_login").val();
+                var password = $("#password_password").val();
+                if(username == ""){
+                    $('#messageDiv').css("display","none");
+                    alert("Wpisz login");
+                    return;
+                }
+                if(password == ""){
+                    $('#messageDiv').css("display","none");
+                    alert("Wprowadz haslo");
+                    return;
+                }
+                //alert("Login: " + username + " Password: " + password);
+                //$.get("/user/login", {username:username, password:password});
+                $.get("/user/login", {username:username, password:password}, function( data ) {
+                    $( 'body' ).html( data );});
+                /*                $.ajax({
+                 url : "/user/login",
+                 method : get,
+                 data : {
+                 username : username,
+                 password : password
+                 },
+                 success : function(results){
+                 if(results != null && results != ""){
+                 showMessage(results);
+                 $('#messageDiv').css("display","block");
+                 }else{
+                 $('#messageDiv').css("display","none");
+                 $('#messageDiv').html("");
+                 alert("Some exception occurred! Please try again.");
+                 }
+                 }
+                 });*/
+            });
+        
+            //function to display message to the user
+            /*function showMessage(results){
+             if(results == 'SUCCESS'){
+             $('#messageDiv').html("<font color='green'>You are successfully logged in. </font>")
+             }else if(results == 'FAILURE'){
+             $('#messageDiv').html("<font color='red'>Username or password incorrect </font>")
+             }
+             }*/
+        
+        
+        
+        
+        
+            $('#rej').on("click", function() {
+        
+                var login = $("#login").val();
+                var email = $("#email").val();
+                var second_name = $("#second_name").val();
+                var first_name = $("#first_name").val();
+                var password = $("#password").val();
+                var cpassword = $("#cpassword").val();
+        
+                if(password == cpassword) {
+                    if ((login == "") || (email == "") || (second_name == "") || (first_name == "") || (password == "") || (cpassword == "")) {
+                        $('#messageDiv').css("display", "none");
+                        alert("Wprowadz wszytskie dane");
+                        return;
+                    } else {
+        
+                        $.post("/user/create", {
+                            login: login,
+                            password: password,
+                            email: email,
+                            first_name: first_name,
+                            second_name: second_name
+                        }, function () {
+                        });
+                        $('#messageDiv').css("display", "none");
+                        alert("Zostaleś poprawnie zarejestrowany");
+                $("#login").val('');
+                $("#email").val('');
+                $("#second_name").val('');
+                $("#first_name").val('');
+                $("#password").val('');
+                $("#cpassword").val('');
+        
+                    }
+                }
+                else {
+                    $('#messageDiv').css("display", "none");
+                    alert("Hasła nie są takie same");
+                }
+            });
+        </script>
+    
+
+</body></html>
