@@ -133,12 +133,15 @@
         <script>
             $('#szuk').on("click", function() {
 
-        var $products = $('#products');
-            $.ajax({
+                var $products = $('#products');
+                var $name = $('#name');
+                alert(name);
+                $.ajax({
 
                 type:'GET',
+                data: {name : "jablko"},
                 dataType: 'json',
-                url: '/product/get',
+                url: '/product/search',
                 success: function(products){
                     $.each(products,function(i, product){
                         $('#tabela tbody').append('<tr><td>' + i + '</td><td>' + product.name + '</td><td>' + product.proteins + '</td><td>' + product.carbohydrates + '</td><td>' + product.fat + '</td></tr>');
