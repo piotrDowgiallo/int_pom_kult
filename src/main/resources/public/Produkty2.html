@@ -134,12 +134,12 @@
             $('#szuk').on("click", function() {
 
                 var $products = $('#products');
-                var $name = $('#name');
+                var $name = $('#name').val();
                 alert(name);
                 $.ajax({
 
                 type:'GET',
-                data: {name : "jablko"},
+                data: {name : name},
                 dataType: 'json',
                 url: '/product/search',
                 success: function(products){

@@ -78,7 +78,7 @@ public class UserController {
         catch (Exception ex){
             return "Error loging the user: " + ex.toString();
         }
-        return "index";
+        return "niezalogowany";
     }
     /**
      * GET /delete  --> Delete the user having the passed id.
