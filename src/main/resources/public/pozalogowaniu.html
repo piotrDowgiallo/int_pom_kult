@@ -1,109 +1,83 @@
-<html><head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Siła !</title>
-        <!-- Bootstrap core CSS -->
-        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-        <!-- Custom styles for this template -->
-        <link href="style.css" rel="stylesheet">
-        <link href="css/theme.css" rel="stylesheet" type="text/css">
-        <script src="jquery-2.2.3.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="stylesheet.css">
-        <script type="text/javascript" src="script.js"></script>
-    </head><body id="startowa">
-        <div class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <img src="images\Beznazwy-1.jpg" class="img-responsive">
-                    </div>
-                </div>
-                <div class="row">
-                    <hr>
-                </div>
-                <div class="row">
-                    <div class="col-md-9 text-justify">
-                        <ul class="nav nav-justified nav-pills">
-                            <li class="active">
-                                <a href="pozalogowaniu.html">Główna</a>
-                            </li>
-                            <li>
-                                <a href="trening1.html">Trening</a>
-                            </li>
-                            <li>
-                                <a href="Produkty1.html">Produkty</a>
-                            </li>
-                            <li>
-                                <a href="kalkulatory.html">Kalkulatory</a>
-                            </li>
-                            <li>
-                                <a href="Dieta.html">Dieta</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3 text-center">
-                        <a class="btn btn-primary" href="index.html">Wyloguj się</a>
-                        <div class="col-md-3 text-center">
-                            <a class="btn btn-primary" href="edytuj_dane.html">Edytuj dane</a>
-                        </div>
-                    </div>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>JO ZECH JEST PSYM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body id="startowa">
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="images/Beznazwy-1.jpg"
+                     class="img-responsive"/>
+            </div>
+        </div>
+        <div class="row">
+            <hr/>
+        </div>
+        <div class="row">
+            <div class="col-md-9 text-justify">
+                <ul class="nav nav-justified nav-pills">
+                    <li class="active">
+                        <a href="pozalogowaniu.html">Główna</a>
+                    </li>
+                    <li>
+                        <a href="trening1.html">Trening</a>
+                    </li>
+                    <li>
+                        <a href="Produkty1.html">Produkty</a>
+                    </li>
+                    <li>
+                        <a href="kalkulatory.html">Kalkulatory</a>
+                    </li>
+                    <li>
+                        <a href="Dieta.html">Dieta</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 text-center">
+                <a class="btn btn-primary" href="index.html">Wyloguj się</a>
+                <div class="col-md-3 text-center">
+                    <a class="btn btn-primary" href="edytuj_dane.html">Edytuj dane</a>
                 </div>
             </div>
         </div>
-        <div class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12"><p>&nbsp;<br/><br/><div style="text-align: center;">MOTYWACYJNA PIOSENKA</div><br/><br/>
-                        <div style="text-align: center;"><iframe width="520" height="315"
-                                                                 src="https://www.youtube.com/embed/VHsgpgX_8iU?autoplay=0">
-                        </iframe></div>
 
-                        </p></div>
-                </div>
-            </div>
-        </div>
-        <footer class="section section-primary" data-pgc-define="">
-            <ul class="pager">
-                <li>
-                    <a href="pomoc.html">Pomoc</a>
-                    <a href="twórcy.html">Twórcy</a>
-                    <a href="informacje.html">Informacje</a>
-                    <a href="kontakt.html">Kontakt</a>
-                </li>
-            </ul>
-        </footer>
-        <script>
-            $('#addtr').on("click", function() {
-        
-                var login = $("#login").val();
-                var email = $("#email").val();
-                var second_name = $("#second_name").val();
-                var first_name = $("#first_name").val();
-                var password = $("#password").val();
-                var cpassword = $("#cpassword").val();
-        
-                if(password == cpassword) {
-                    if ((login == "") || (email == "") || (second_name == "") || (first_name == "") || (password == "") || (cpassword == "")) {
-                        $('#messageDiv').css("display", "none");
-                        alert("Wprowadz wszytskie dane");
-                        return;
-                    } else {
-        
-                        $.post("/user/create", {
-                            login: login,
-                            password: password,
-                            email: email,
-                            first_name: first_name,
-                            second_name: second_name
-                        }, function () {
-                        });
-                        $('#messageDiv').css("display", "none");
-                        alert("Zostaleś poprawnie zarejestrowany");
-                    }
-                }
-        
-            });
-        </script>
-    
 
+    </div>
+
+    <div class="section"><div class="container"><div class="row"><div class="col-md-4">
+        <img src="images/hantel.gif" class="img-responsive"/>
+    </div><div class="col-md-4"><h1 class="text-center text-primary">Witaj na naszej stronie &nbsp;</h1></div>
+        <div class="col-md-4"><img src="images/hantel2.gif" class="img-responsive"/>
+        </div></div></div></div>
+
+    <div class="section"><div class="container"><div class="row"><div class="col-md-12">
+        <h4 contenteditable="true" class="text-center">
+            Wszystko wskazuje na to, że udało ci się poprawnie zalogować, to już jest sukces i pierwszy krok twojej niezwykłej przemiany!
+
+            <div><br/></div></h4></div></div><div class="row"><div class="col-md-12"><h2 contenteditable="true" class="text-center">Nie znalazłeś się tu
+        przypadkiem! Rozpocznij swoją transformację juz dziś, dzięki narzędziom,
+        które Ci udostępniamy! To takie proste, wystarczy wybrać interesującą cię opcję na górze ekranu.
+    </h2></div></div></div></div>
+
+</div>
+<footer class="section section-primary" data-pgc-define="">
+    <ul class="pager">
+        <li>
+            <a href="pomoc.html">Pomoc</a>
+            <a href="twórcy.html">Twórcy</a>
+            <a href="informacje.html">Informacje</a>
+            <a href="kontakt.html">Kontakt</a>
+        </li>
+    </ul>
+</footer>
 </body></html>
