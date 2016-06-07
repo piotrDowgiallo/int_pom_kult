@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b2a20d86-e68a-421f-94ed-ad564653498b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/niezalogowany.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/niezalogowany.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/pozalogowaniu.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/pozalogowaniu.html" />
     </list>
     <ignored path="InternetowyPomocnikKulturysty-Core.iws" />
@@ -51,7 +50,7 @@
       <file leaf-file-name="pozalogowaniu.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pozalogowaniu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="646">
               <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
               <folding />
             </state>
@@ -262,6 +261,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -502,8 +503,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -1055,7 +1054,8 @@
       <workItem from="1465317800622" duration="10917000" />
       <workItem from="1465331831489" duration="2239000" />
       <workItem from="1465335598184" duration="27000" />
-      <workItem from="1465335837256" duration="9000" />
+      <workItem from="1465335837256" duration="37000" />
+      <workItem from="1465336044182" duration="59000" />
     </task>
     <task id="LOCAL-00001" summary="Git test">
       <created>1464880793509</created>
@@ -1239,11 +1239,18 @@
       <option name="project" value="LOCAL" />
       <updated>1465333923540</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="xasad">
+      <created>1465335859895</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1465335859895</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152768000" />
+    <option name="totallyTimeSpent" value="152855000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -1311,7 +1318,8 @@
     <MESSAGE value="Kalkulatory - działające" />
     <MESSAGE value="Reload page" />
     <MESSAGE value="Wyszukiwanie produktów" />
-    <option name="LAST_COMMIT_MESSAGE" value="Wyszukiwanie produktów" />
+    <MESSAGE value="xasad" />
+    <option name="LAST_COMMIT_MESSAGE" value="xasad" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1616,7 +1624,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/pozalogowaniu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="646">
           <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
           <folding />
         </state>
