@@ -1,5 +1,6 @@
 package com.pwr.internetowypomocnik.controller;
 
+import com.pwr.internetowypomocnik.model.LoggedUser;
 import com.pwr.internetowypomocnik.model.User;
 import com.pwr.internetowypomocnik.model.UserDao;
 import org.hibernate.validator.internal.xml.MethodType;
@@ -16,6 +17,7 @@ import java.util.Iterator;
  */
 @Controller
 public class UserController {
+    @Autowired private LoggedUser loggedUser;
 
     // TODO - delete
     @RequestMapping("/testowy")
@@ -58,6 +60,8 @@ public class UserController {
 
     @RequestMapping(value="/user/login", method = RequestMethod.GET)
     public String login(@RequestParam(value = "username", required = false) String username, @RequestParam(value = "password", required = false) String password){
+
+
         System.out.println("Login: " + username + " password: " + password);
         try{
             Iterable<User> userList = userDao.findAll();
@@ -69,7 +73,8 @@ public class UserController {
                 System.out.println("Id user = " + tmp.getId_user() + " Username: " + tmp.getLogin());
                 if(username.equals(tmp.getLogin()) && password.equals(tmp.getPassword()))
                 {
-                    System.out.println("Found user!");
+                    loggedUser = new LoggedUser(tmp.getId_user(), tmp.getPassword(), tmp.getLogin(), tmp.getEmail(), tmp.getFirst_name(), tmp.getSecond_name(), tmp.getAge(), tmp.getSex(), tmp.getBody_status_id(), tmp.getDiet_id());
+                    System.out.println("Found user! Logged user login = " + loggedUser.getLogin());
                     return "pozalogowaniu";
 
                 }
@@ -147,5 +152,6 @@ public class UserController {
 
     @Autowired
     private UserDao userDao;
+
 
 }
