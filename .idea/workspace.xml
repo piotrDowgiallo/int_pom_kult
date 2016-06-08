@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b2a20d86-e68a-421f-94ed-ad564653498b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/ProductController.java" afterPath="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/ProductController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/pwr/internetowypomocnik/controller/UserController.java" />
     </list>
     <ignored path="InternetowyPomocnikKulturysty-Core.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1298,7 +1296,7 @@
       <workItem from="1465069539241" duration="234000" />
       <workItem from="1465317800622" duration="10917000" />
       <workItem from="1465331831489" duration="5139000" />
-      <workItem from="1465372918521" duration="1776000" />
+      <workItem from="1465372918521" duration="1793000" />
     </task>
     <task id="LOCAL-00001" summary="Git test">
       <created>1464880793509</created>
@@ -1496,11 +1494,18 @@
       <option name="project" value="LOCAL" />
       <updated>1465375344966</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Próby stworzenia sesji - naprawione">
+      <created>1465377275156</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1465377275156</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157408000" />
+    <option name="totallyTimeSpent" value="157425000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1569,7 +1574,8 @@
     <MESSAGE value="Reload page" />
     <MESSAGE value="Wyszukiwanie produktów" />
     <MESSAGE value="Próby stworzenia sesji" />
-    <option name="LAST_COMMIT_MESSAGE" value="Próby stworzenia sesji" />
+    <MESSAGE value="Próby stworzenia sesji - naprawione" />
+    <option name="LAST_COMMIT_MESSAGE" value="Próby stworzenia sesji - naprawione" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
