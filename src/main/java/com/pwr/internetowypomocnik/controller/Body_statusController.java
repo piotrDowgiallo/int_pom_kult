@@ -37,9 +37,9 @@ public class Body_statusController {
     public @ResponseBody Iterable<Body_status> getBody_status()
     {
         Iterable<Body_status> body_statusList = null;
-        Body_status tmpProduct = null;
+        Body_status tmpBody_status = null;
         try{
-            body_statusList = body_statusDao.findAll();
+            body_statusList = Body_statusDao.findAll();
             Iterator<Body_status> body_statusIterator = body_statusList.iterator();
             tmpBody_status = body_statusIterator.next();
 

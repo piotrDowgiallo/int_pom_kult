@@ -1,0 +1,232 @@
+<html><head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Siła !</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet">
+        <link href="css/theme.css" rel="stylesheet" type="text/css">
+        <script src="jquery-2.2.3.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head><body>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="images\Beznazwy-1.jpg" class="img-responsive">
+                    </div>
+                </div>
+                <div class="row">
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-md-9 text-justify">
+                        <ul class="nav nav-justified nav-pills">
+                            <li>
+                                <a href="pozalogowaniu.html">Główna</a>
+                            </li>
+                            <li>
+                                <a href="trening1.html">Trening</a>
+                            </li>
+                            <li>
+                                <a href="Produkty1.html">Produkty</a>
+                            </li>
+                            <li class="active">
+                                <a href="kalkulatory.html">Kalkulatory</a>
+                            </li>
+                            <li>
+                                <a href="Dieta.html">Dieta</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <a class="btn btn-primary" href="index.html">Wyloguj się</a>
+                        <div class="col-md-3 text-center">
+                            <a class="btn btn-primary" href="edytuj_dane.html">Edytuj dane</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 text-center">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li>
+                                <a href="kalkulatory.html">BMI - Wskaźnik masy ciała</a>
+                            </li>
+                            <li>
+                                <a href="kalkulatory2.html">BMR - Podstawowe zapotrzebowanie energetyczne</a>
+                            </li><li class="active">
+                                <a href="wymiary.html">Body status</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="col-md-12">
+                            <div class="btn-link panel panel-primary">
+                                <div class="panel-heading">
+                                    <h1 class="panel-title text-center">Dadaj aktualny body status:</h1>
+                                </div>
+                            </div>
+                            <form class="form-horizontal text-right" role="form">
+                                <div class="form-group">
+                                    <div class="col-sm-2">
+                                        <label for="name" class="control-label">Waga</label>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="name" placeholder="waga">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-2">
+                                        <label for="proteins" class="control-label">Wysokość</label>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="proteins" placeholder="wysokość">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-2">
+                                        <label for="carbohydrates" class="control-label">Udo</label>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="carbohydrates" placeholder="udo">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-2">
+                                        <label for="fat" class="control-label">Biceps</label>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="fat" placeholder="biceps">
+                                    </div>
+                                </div><div class="form-group">
+                                    <div class="col-sm-2">
+                                        <label for="fat" class="control-label">Talia</label>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="fat" placeholder="talia">
+                                    </div>
+                                </div><div class="form-group">
+                                    <div class="col-sm-2">
+                                        <label for="fat" class="control-label">Klatka piersiowa</label>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="fat" placeholder="klatka piersiowa">
+                                    </div>
+                                </div><div class="form-group">
+                                    <div class="col-sm-2">
+                                        <label for="fat" class="control-label">Tkanka tłuszczowa</label>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="fat" placeholder="tkanka tłuszczowa">
+                                    </div>
+                                </div>
+                                <a class="btn btn-info" id="add">Dodaj status</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><div class="section"><div class="container"><div class="row"><div class="col-md-12">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title text-center">Twoja baza produktów</h3>
+                            </div>
+                            <div class="panel-body">
+                                <table class="table" id="tabela">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Waga</th>
+                                            <th>Wysokość</th>
+                                            <th>Biceps</th>
+                                            <th>Klatka piersiowa</th>
+                                            <th>Udo</th>
+                                            <th>Talia</th>
+                                            <th>Tkanka tłuszczowa</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div></div></div></div>
+        <footer class="section section-primary" data-pgc-define="">
+            <ul class="pager">
+                <li>
+                    <a id="pomoc">Pomoc</a>
+                    <a id="tworcy">Twórcy</a>
+                    <a id="informacje">Informacje</a>
+                    <a id="kontakt">Kontakt</a>
+                </li>
+            </ul>
+        </footer>
+        <script>
+            $('#kontakt').on("click", function() {
+        $('#messageDiv').css("display", "none");
+        alert("0-700-880-390");
+
+    });
+    $('#informacje').on("click", function() {
+        $('#messageDiv').css("display", "none");
+        alert("JAVA jest extra");
+
+    });
+    $('#pomoc').on("click", function() {
+        $('#messageDiv').css("display", "none");
+        alert("HELP");
+
+    });
+    $('#tworcy').on("click", function() {
+        $('#messageDiv').css("display", "none");
+        alert("Najelpsi z najlepszych");
+
+    });
+
+    
+        var $status2 = $('#status2');
+            $.ajax({
+
+                type:'GET',
+                dataType: 'json',
+                url: '/body_status/get',
+                success: function(status2){
+                    $.each(status2,function(i, status){
+                        $('#tabela tbody').append('<tr><td>' + i + '</td><td>' + status.weight + '</td><td>' + status.height + '</td><td>' + status.biceps + '</td><td>' + status.chest + '</td><td>' + status.leg + '</td><td>' + status.waist + '</td><td>' + status.body_fat + '</td></tr>');
+                    });
+
+                }
+            });
+
+            $('#add').on("click", function() {
+
+                var weight = $("#weight").val();
+                var height = $("#height").val();
+                var biceps = $("#biceps").val();
+                var chest = $("#chest").val();
+                var leg = $("#leg").val();
+                var waist = $("#waist").val();
+                var body_fat = $("#body_fat").val();
+                //var user_id = $("user_id").val();
+                $.post("/body_status/create",{weight: weight, height: height, biceps: biceps, chest: chest, leg: leg, waist: waist, body_fat: body_fat}, function() {
+                    alert( "Dodałes status" );
+                    location.reload();
+                });
+                $('#weight').val('');
+                $('#height').val('');
+                $('#biceps').val('');
+                $('#chest').val('');
+                $('#leg').val('');
+                $('#waist').val('');
+                $('#body_fat').val('');
+            });
+        </script>
+    
+
+</body></html>
