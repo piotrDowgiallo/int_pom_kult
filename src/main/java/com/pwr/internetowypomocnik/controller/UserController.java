@@ -1,6 +1,6 @@
 package com.pwr.internetowypomocnik.controller;
 
-import com.pwr.internetowypomocnik.model.LoggedUser;
+
 import com.pwr.internetowypomocnik.model.User;
 import com.pwr.internetowypomocnik.model.UserDao;
 import org.hibernate.validator.internal.xml.MethodType;

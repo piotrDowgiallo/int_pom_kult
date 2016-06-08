@@ -1,6 +1,6 @@
 package com.pwr.internetowypomocnik.controller;
 
-import com.pwr.internetowypomocnik.model.LoggedUser;
+
 import com.pwr.internetowypomocnik.model.Product;
 import com.pwr.internetowypomocnik.model.ProductDao;
 import org.springframework.beans.factory.annotation.Autowired;
