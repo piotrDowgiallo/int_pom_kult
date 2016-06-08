@@ -3,9 +3,10 @@ package com.pwr.internetowypomocnik.controller;
 import com.pwr.internetowypomocnik.model.Body_status;
 import com.pwr.internetowypomocnik.model.Body_statusDao;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * Created by Piotr on 2016-04-22.
@@ -16,9 +17,9 @@ public class Body_statusController {
     /**
      * GET /create  --> Create a new user and save it in the database.
      */
-    @RequestMapping("/body_status/create")
+    @RequestMapping(value="/body_status/create", method= RequestMethod.POST)
     //(String name, int proteins, int carbohydrates, int fat, long id_user)
-    public String create(Integer weight, Integer height, Integer biceps, Integer waist, Integer chest, Integer leg, float body_fat){
+    public String create(@RequestParam("weight") Integer weight,@RequestParam("height") Integer height,@RequestParam("biceps") Integer biceps,@RequestParam("waist") Integer waist,@RequestParam("chest") Integer chest,@RequestParam("leg") Integer leg,@RequestParam("body_fat") float body_fat){
         String id_Body_status = "";
         try {
             Body_status Body_status = new Body_status( weight, height,  biceps,  waist,  chest, leg,body_fat);
@@ -31,6 +32,23 @@ public class Body_statusController {
         return "Body_status successfully created with id = " + id_Body_status;
     }
 
+
+    @RequestMapping(value="/body_status/get")
+    public @ResponseBody Iterable<Body_status> getBody_status()
+    {
+        Iterable<Body_status> body_statusList = null;
+        Body_status tmpProduct = null;
+        try{
+            body_statusList = body_statusDao.findAll();
+            Iterator<Body_status> body_statusIterator = body_statusList.iterator();
+            tmpBody_status = body_statusIterator.next();
+
+        }
+        catch (Exception ex){
+
+        }
+        return body_statusList;
+    }
     /**
      * GET /delete  --> Delete the user having the passed id.
      *
