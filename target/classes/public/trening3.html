@@ -177,10 +177,10 @@
         <footer class="section section-primary" data-pgc-define="">
             <ul class="pager">
                 <li>
-                    <a href="pomoc.html">Pomoc</a>
-                    <a href="twórcy.html">Twórcy</a>
-                    <a href="informacje.html">Informacje</a>
-                    <a href="kontakt.html">Kontakt</a>
+            <a id="pomoc">Pomoc</a>
+            <a id="tworcy">Twórcy</a>
+            <a id="informacje">Informacje</a>
+            <a id="kontakt">Kontakt</a>
                 </li>
             </ul>
         </footer>
@@ -212,6 +212,26 @@
                     alert( "Dodałes Plan" );
                 });
             });
+                $('#kontakt').on("click", function() {
+        $('#messageDiv').css("display", "none");
+        alert("0-700-880-390");
+
+    });
+    $('#informacje').on("click", function() {
+        $('#messageDiv').css("display", "none");
+        alert("JAVA jest extra");
+
+    });
+    $('#pomoc').on("click", function() {
+        $('#messageDiv').css("display", "none");
+        alert("HELP");
+
+    });
+    $('#tworcy').on("click", function() {
+        $('#messageDiv').css("display", "none");
+        alert("Najelpsi z najlepszych");
+
+    });
         </script>
     
 
