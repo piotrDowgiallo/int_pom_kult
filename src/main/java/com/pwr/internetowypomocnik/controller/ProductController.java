@@ -1,6 +1,5 @@
 package com.pwr.internetowypomocnik.controller;
 
-import com.pwr.internetowypomocnik.model.LoggedUser;
 import com.pwr.internetowypomocnik.model.Product;
 import com.pwr.internetowypomocnik.model.ProductDao;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +12,6 @@ import java.util.Iterator;
 /**
  * Created by Piotr on 2016-04-22.
  */
-
 @RestController
 public class ProductController {
 
@@ -75,8 +73,6 @@ public class ProductController {
             while(arrayIterator.hasNext())
                 System.out.println(arrayIterator.next().getName());
 
-            System.out.println("Logged user login = " + loggedUser.getLogin());
-
         }
         catch (Exception ex){
             //return "Error receiving products:" + ex.toString();
@@ -125,7 +121,5 @@ public class ProductController {
 
     @Autowired
     private ProductDao productDao;
-    //@Autowired
-    //private LoggedUser loggedUser;
 
 }
