@@ -1,5 +1,6 @@
 package com.pwr.internetowypomocnik.controller;
 
+import com.pwr.internetowypomocnik.model.LoggedUser;
 import com.pwr.internetowypomocnik.model.User;
 import com.pwr.internetowypomocnik.model.UserDao;
 import org.hibernate.validator.internal.xml.MethodType;
@@ -16,6 +17,7 @@ import java.util.Iterator;
  */
 @Controller
 public class UserController {
+
 
     // TODO - delete
     @RequestMapping("/testowy")
@@ -58,6 +60,8 @@ public class UserController {
 
     @RequestMapping(value="/user/login", method = RequestMethod.GET)
     public String login(@RequestParam(value = "username", required = false) String username, @RequestParam(value = "password", required = false) String password){
+
+
         System.out.println("Login: " + username + " password: " + password);
         try{
             Iterable<User> userList = userDao.findAll();
@@ -69,7 +73,6 @@ public class UserController {
                 System.out.println("Id user = " + tmp.getId_user() + " Username: " + tmp.getLogin());
                 if(username.equals(tmp.getLogin()) && password.equals(tmp.getPassword()))
                 {
-                    System.out.println("Found user!");
                     return "pozalogowaniu";
 
                 }
@@ -147,5 +150,6 @@ public class UserController {
 
     @Autowired
     private UserDao userDao;
+
 
 }
